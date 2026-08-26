@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -113,9 +112,15 @@
             transform: scale(1.12) rotate(5deg);
         }
 
-        .badge-pill {
-            background: rgba(239, 246, 255, 0.8);
-            border: 1px solid rgba(191, 219, 254, 0.6);
+        .country-pill {
+            transition: all 0.25s ease;
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(203, 213, 225, 0.8);
+        }
+        .country-pill:hover {
+            transform: translateY(-2px);
+            border-color: rgba(37, 99, 235, 0.5);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
         }
     </style>
 </head>
@@ -210,6 +215,114 @@
             </div>
         </div>
 
+        <!-- ENHANCED INTERNATIONAL CV SECTION (EUROPE & GULF COUNTRIES WITH FLAGS & ICONS) -->
+        <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-4">
+                <div>
+                    <div class="flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-brand-600 mb-1">
+                        <i class="fa-solid fa-earth-europe text-sm"></i> Global Job Markets
+                    </div>
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900">International CV & Resume Writing</h2>
+                </div>
+                <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full bg-blue-50 text-brand-700 border border-blue-200 w-fit">
+                    <i class="fa-solid fa-circle-check text-emerald-500"></i> 100% ATS Compliant Formats
+                </span>
+            </div>
+
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                We craft specialized CVs, Cover Letters, and Europass files formatted specifically for visa and job requirements in **European**, **Gulf (GCC)**, and Western countries.
+            </p>
+
+            <!-- Visual Preview Card -->
+            <a href="cv-studio-country-preview.png" target="_blank" class="block overflow-hidden rounded-2xl border border-slate-200 group relative">
+                <img src="cv-studio-country-preview.png" alt="International CV Studio Preview" class="w-full h-auto object-cover group-hover:scale-[1.01] transition duration-500">
+                <div class="absolute inset-0 bg-slate-900/10 group-hover:bg-transparent transition duration-300"></div>
+            </a>
+
+            <!-- EUROPEAN COUNTRIES LIST WITH FLAGS -->
+            <div class="space-y-3 pt-2">
+                <div class="flex items-center gap-2 text-xs font-bold text-slate-900 uppercase tracking-wider">
+                    <i class="fa-solid fa-flag-usa text-blue-600"></i> European & Western Countries (Europass & ATS CV)
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm">
+                        <span>🇪🇺</span> European Union
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm">
+                        <span>🇩🇪</span> Germany
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm">
+                        <span>🇮🇹</span> Italy
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm">
+                        <span>🇫🇷</span> France
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm">
+                        <span>🇪🇸</span> Spain
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm">
+                        <span>🇬🇧</span> United Kingdom
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm">
+                        <span>🇳🇱</span> Netherlands
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm">
+                        <span>🇵🇹</span> Portugal
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm">
+                        <span>🇵🇱</span> Poland
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm">
+                        <span>🇷🇴</span> Romania
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm">
+                        <span>🇨🇦</span> Canada
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm">
+                        <span>🇦🇺</span> Australia
+                    </span>
+                </div>
+            </div>
+
+            <!-- GULF COUNTRIES LIST WITH FLAGS -->
+            <div class="space-y-3 pt-2">
+                <div class="flex items-center gap-2 text-xs font-bold text-slate-900 uppercase tracking-wider">
+                    <i class="fa-solid fa-kaaba text-emerald-600"></i> Gulf & Middle East GCC Countries
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm border-emerald-100">
+                        <span>🇦🇪</span> United Arab Emirates (Dubai / Abu Dhabi)
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm border-emerald-100">
+                        <span>🇸🇦</span> Saudi Arabia (KSA)
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm border-emerald-100">
+                        <span>🇶🇦</span> Qatar
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm border-emerald-100">
+                        <span>🇴🇲</span> Oman
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm border-emerald-100">
+                        <span>🇧🇭</span> Bahrain
+                    </span>
+                    <span class="country-pill px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-800 flex items-center gap-2 shadow-sm border-emerald-100">
+                        <span>🇰🇼</span> Kuwait
+                    </span>
+                </div>
+            </div>
+
+            <!-- Quick WhatsApp Order CTA for International CVs -->
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 p-4 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-3 mt-4">
+                <div class="text-center sm:text-left">
+                    <p class="text-xs font-bold text-slate-900">Applying for Gulf or European Job Visas?</p>
+                    <p class="text-xs text-slate-600">Get your professional country-specific CV delivered on WhatsApp.</p>
+                </div>
+                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20an%20International%20%2F%20Gulf%20%2F%20Europass%20CV." target="_blank" class="wa-btn text-white text-xs font-bold px-4 py-2.5 rounded-xl flex items-center gap-1.5 whitespace-nowrap">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> Order Country CV
+                </a>
+            </div>
+        </div>
+
         <!-- Premium Stats Section -->
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
             <div class="glass-card p-4 rounded-2xl text-center border border-slate-200/80">
@@ -230,25 +343,6 @@
             </div>
         </div>
 
-        <!-- About Services Section -->
-        <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-4">
-            <div class="flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-brand-600">
-                <i class="fa-solid fa-star"></i> Professional Expertise
-            </div>
-            <h2 class="text-xl sm:text-2xl font-bold text-slate-900">About My Writing & Editing Services</h2>
-            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
-                Dear Friends & Job Seekers! 👋 Get your professional CV / Resume custom designed to significantly boost your career and job interview chances. High quality, ATS-friendly, and eye-catching documents tailored to international standards.
-            </p>
-
-            <div class="pt-2 flex flex-wrap gap-2">
-                <span class="badge-pill text-brand-700 text-xs font-semibold px-3 py-1.5 rounded-lg">#ATS_CV</span>
-                <span class="badge-pill text-brand-700 text-xs font-semibold px-3 py-1.5 rounded-lg">#Europass_CV</span>
-                <span class="badge-pill text-brand-700 text-xs font-semibold px-3 py-1.5 rounded-lg">#Cover_Letter</span>
-                <span class="badge-pill text-brand-700 text-xs font-semibold px-3 py-1.5 rounded-lg">#Exam_Notes</span>
-                <span class="badge-pill text-brand-700 text-xs font-semibold px-3 py-1.5 rounded-lg">#Document_Editing</span>
-            </div>
-        </div>
-
         <!-- Professional Services Grid -->
         <div class="space-y-4">
             <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-1">
@@ -261,7 +355,6 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
                 
-                <!-- Service Card 1 -->
                 <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20a%20CV%20or%20Resume." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
                     <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
                         <i class="fa-solid fa-file-lines"></i>
@@ -270,7 +363,6 @@
                     <p class="text-xs text-slate-500 mt-1 leading-relaxed">Professional job documents tailored specifically to your career goals.</p>
                 </a>
 
-                <!-- Service Card 2 -->
                 <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20an%20Europass%20or%20ATS%20CV." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
                     <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
                         <i class="fa-solid fa-file-circle-check"></i>
@@ -279,7 +371,6 @@
                     <p class="text-xs text-slate-500 mt-1 leading-relaxed">Modern, professional, and ATS-compliant CV formats for international markets.</p>
                 </a>
 
-                <!-- Service Card 3 -->
                 <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20NTS%2C%20PTS%20or%20PPSC%20preparation%20notes." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
                     <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
                         <i class="fa-solid fa-graduation-cap"></i>
@@ -288,7 +379,6 @@
                     <p class="text-xs text-slate-500 mt-1 leading-relaxed">Exam preparation material, updated notes, and comprehensive study resources.</p>
                 </a>
 
-                <!-- Service Card 4 -->
                 <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20test%20preparation%20notes%20or%20syllabus." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
                     <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
                         <i class="fa-solid fa-book-open"></i>
@@ -297,7 +387,6 @@
                     <p class="text-xs text-slate-500 mt-1 leading-relaxed">Organized notes, solved Q&As, and updated syllabus content.</p>
                 </a>
 
-                <!-- Service Card 5 -->
                 <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20an%20educational%20notice%20or%20document." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
                     <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
                         <i class="fa-solid fa-school"></i>
@@ -306,67 +395,12 @@
                     <p class="text-xs text-slate-500 mt-1 leading-relaxed">Clean formatting for educational notices and official paperwork.</p>
                 </a>
 
-                <!-- Service Card 6 -->
                 <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20a%20School%20or%20College%20ID%20Card." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
                     <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
                         <i class="fa-solid fa-id-card"></i>
                     </div>
                     <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">School / College ID Cards</h3>
                     <p class="text-xs text-slate-500 mt-1 leading-relaxed">Custom professional student and institutional ID card designs.</p>
-                </a>
-
-                <!-- Service Card 7 -->
-                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20an%20application%20or%20official%20letter." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
-                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
-                        <i class="fa-solid fa-pen-to-square"></i>
-                    </div>
-                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Applications & Official Letters</h3>
-                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Formal job applications, official request letters, and document formatting.</p>
-                </a>
-
-                <!-- Service Card 8 -->
-                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20a%20certificate%20designed%20or%20edited." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
-                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
-                        <i class="fa-solid fa-certificate"></i>
-                    </div>
-                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Certificate Designing</h3>
-                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Elegant certificates for professional training, events, and academics.</p>
-                </a>
-
-                <!-- Service Card 9 -->
-                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20background%20removal%20or%20background%20change." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
-                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
-                        <i class="fa-solid fa-image"></i>
-                    </div>
-                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Background Editing</h3>
-                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Precision background removal and professional studio replacement.</p>
-                </a>
-
-                <!-- Service Card 10 -->
-                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20dress%20change%20or%20passport%20size%20photo." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
-                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
-                        <i class="fa-solid fa-user-tie"></i>
-                    </div>
-                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Passport Photo & Suit Edit</h3>
-                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Official passport-size photo prep with formal suit/dress changes.</p>
-                </a>
-
-                <!-- Service Card 11 -->
-                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20an%20old%20or%20damaged%20image%20enhanced." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
-                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </div>
-                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Old Photo Enhancement</h3>
-                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Restoration, blur cleanup, and enhancement for old photos.</p>
-                </a>
-
-                <!-- Service Card 12 -->
-                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20a%20website%20or%20portfolio." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
-                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
-                        <i class="fa-solid fa-globe"></i>
-                    </div>
-                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Website & Portfolio Creation</h3>
-                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Responsive digital CV websites and custom personal portfolio pages.</p>
                 </a>
 
             </div>
@@ -378,61 +412,9 @@
                 <h3 class="text-xl sm:text-2xl font-extrabold">Give Your Career a Professional Look!</h3>
                 <p class="text-xs sm:text-sm text-blue-100">Contact directly on WhatsApp to get your documents ready in hours.</p>
             </div>
-            <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20would%20like%20to%20discuss%20your%20professional%20services." target="_blank" class="wa-btn text-white font-bold py-3 px-6 rounded-2xl text-sm flex items-center gap-2 whitespace-nowrap z-10">
+            <a href="https://wa.me/923083500829" target="_blank" class="wa-btn text-white font-bold py-3 px-6 rounded-2xl text-sm flex items-center gap-2 whitespace-nowrap z-10">
                 <i class="fa-brands fa-whatsapp text-xl"></i> Get Started Now
             </a>
-        </div>
-
-        <!-- International CV Preview Section -->
-        <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-4">
-            <div class="flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-brand-600">
-                <i class="fa-solid fa-earth-americas"></i> International Formats
-            </div>
-            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900">CVs for Europe, Gulf & Global Markets</h2>
-            <p class="text-xs sm:text-sm text-slate-600">Professional CVs tailored for European countries, UAE, Saudi Arabia, Qatar, Oman, Kuwait, and Australia.</p>
-
-            <a href="cv-studio-country-preview.png" target="_blank" class="block overflow-hidden rounded-2xl border border-slate-200 group">
-                <img src="cv-studio-country-preview.png" alt="International CV Studio Preview" class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-500">
-            </a>
-
-            <div class="flex flex-wrap gap-1.5 pt-2">
-                <span class="px-3 py-1 rounded-lg bg-blue-50 text-blue-700 text-xs font-bold">🇪🇺 Europe</span>
-                <span class="px-3 py-1 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-bold">🇦🇪 UAE</span>
-                <span class="px-3 py-1 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-bold">🇸🇦 Saudi Arabia</span>
-                <span class="px-3 py-1 rounded-lg bg-purple-50 text-purple-700 text-xs font-bold">🇶🇦 Qatar</span>
-                <span class="px-3 py-1 rounded-lg bg-orange-50 text-orange-700 text-xs font-bold">🇴🇲 Oman</span>
-                <span class="px-3 py-1 rounded-lg bg-red-50 text-red-700 text-xs font-bold">🇧🇭 Bahrain</span>
-                <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-bold">🇰🇼 Kuwait</span>
-            </div>
-        </div>
-
-        <!-- Featured Highlights Grid -->
-        <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-4">
-            <h2 class="text-xl font-bold text-slate-900">Featured Portfolio & Links</h2>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7494423064567541760/" target="_blank" class="border border-slate-200/80 rounded-2xl p-4 hover:border-brand-500 transition group block bg-white">
-                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 text-sm">LinkedIn Activity & Updates</h3>
-                    <p class="text-xs text-slate-500 mt-1 line-clamp-2">Detailed overview of my professional CV writing services and client feedback.</p>
-                </a>
-
-                <a href="https://professional-cv-document-center.vercel.app/" target="_blank" class="border border-slate-200/80 rounded-2xl p-4 hover:border-brand-500 transition group block bg-white">
-                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 text-sm">Professional Work Portfolio</h3>
-                    <p class="text-xs text-slate-500 mt-1 line-clamp-2">Explore live work samples and CV designs on my Vercel portfolio.</p>
-                </a>
-
-                <a href="https://g.page/r/CQbZjPuTbUrcEAE/review" target="_blank" class="border border-slate-200/80 rounded-2xl p-4 hover:border-brand-500 transition group block bg-white">
-                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 text-sm">Google Reviews ⭐</h3>
-                    <p class="text-xs text-slate-500 mt-1 line-clamp-2">Read real reviews from satisfied job candidates or drop your own feedback.</p>
-                </a>
-
-                <a href="https://www.google.com/search?q=Professional+CV+%26+Document+Center" target="_blank" class="border border-slate-200/80 rounded-2xl p-4 hover:border-brand-500 transition group block bg-white">
-                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 text-sm">Google Business Listing</h3>
-                    <p class="text-xs text-slate-500 mt-1 line-clamp-2">Check official contact details, operating hours, and location on Google.</p>
-                </a>
-
-            </div>
         </div>
 
         <!-- Footer -->
@@ -444,7 +426,7 @@
     </main>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20would%20like%20to%20discuss%20your%20professional%20services." target="_blank" class="float-wa fixed right-5 bottom-5 w-14 h-14 rounded-full bg-emerald-600 text-white flex items-center justify-center text-2xl z-50 shadow-2xl" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/923083500829" target="_blank" class="float-wa fixed right-5 bottom-5 w-14 h-14 rounded-full bg-emerald-600 text-white flex items-center justify-center text-2xl z-50 shadow-2xl" aria-label="Chat on WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
