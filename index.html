@@ -1,264 +1,452 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hassan Jatoi - Professional CV & Resume Writer in Mehar Dadu Sindh Pakistan</title>
     
-    <!-- SEO Meta Tags for Google Search ranking -->
+    <!-- SEO Meta Tags -->
     <meta name="description" content="Hassan Jatoi is a professional CV & Document Writer offering ATS-Friendly CV, Europass CV, Canadian & Australian Resume, Gulf & UAE Job CV writing services at affordable charges. Contact: 03083500829">
     <meta name="keywords" content="Hassan Jatoi, CV Writer Mehar Dadu Sindh, Professional Resume Writer Pakistan, ATS Friendly CV, Europass CV, Cover Letter Services, Gulf Job CV, LinkedIn Profile Hassan Jatoi">
     <meta name="author" content="Hassan Jatoi">
     <meta name="google-site-verification" content="googledcf5aa11eb043d8c">
     
-    <!-- Resource Hints for Lightning-Fast Image Loading -->
+    <!-- Resource Hints -->
     <link rel="preload" as="image" href="https://i.ibb.co/7JyQZc3q/Chat-GPT-Image-Aug-15-2026-08-34-48-PM.png">
     <link rel="preload" as="image" href="https://i.ibb.co/rKkSgc0n/Chat-GPT-Image-Aug-20-2026-08-15-04-PM.png">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
                     },
                     colors: {
-                        linkedin: {
-                            blue: '#0a66c2',
-                            dark: '#004182',
-                            bg: '#f3f2ef',
-                            text: '#000000e6',
-                            muted: '#00000099'
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
                         }
                     }
                 }
             }
         }
     </script>
+    
     <style>
+        :root {
+            --bg-glow: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.08), transparent 40%);
+        }
         body {
-            background-color: #f3f2ef;
+            background-color: #f8fafc;
+            background-image: var(--bg-glow);
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
-        .hashtag {
-            color: #0a66c2;
-            font-weight: 600;
-            cursor: pointer;
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.05);
         }
-        .hashtag:hover {
-            text-decoration: underline;
+
+        .glass-card-hover {
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px -15px rgba(37, 99, 235, 0.12);
+            border-color: rgba(147, 197, 253, 0.6);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #4f46e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-btn {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            box-shadow: 0 8px 20px -6px rgba(37, 99, 235, 0.4);
+            transition: all 0.3s ease;
+        }
+        .gradient-btn:hover {
+            box-shadow: 0 12px 25px -4px rgba(37, 99, 235, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .wa-btn {
+            background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+            box-shadow: 0 8px 20px -6px rgba(22, 163, 74, 0.4);
+            transition: all 0.3s ease;
+        }
+        .wa-btn:hover {
+            box-shadow: 0 12px 25px -4px rgba(22, 163, 74, 0.5);
+            transform: translateY(-2px);
+        }
+
+        .service-icon-box {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            transition: all 0.3s ease;
+        }
+        .glass-card-hover:hover .service-icon-box {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff !important;
+            transform: scale(1.1) rotate(-3deg);
+        }
+
+        .float-wa {
+            box-shadow: 0 12px 30px rgba(22, 163, 74, 0.4);
+            transition: all 0.3s ease;
+        }
+        .float-wa:hover {
+            transform: scale(1.12) rotate(5deg);
+        }
+
+        .badge-pill {
+            background: rgba(239, 246, 255, 0.8);
+            border: 1px solid rgba(191, 219, 254, 0.6);
         }
     </style>
 </head>
-<body class="text-linkedin-text antialiased">
+<body class="text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
 
-    <!-- Navigation Bar -->
-    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <i class="fa-brands fa-linkedin text-linkedin-blue text-4xl"></i>
-                <div class="hidden md:flex items-center bg-blue-50/50 rounded-md px-3 py-1.5 ml-2 border border-gray-100">
-                    <i class="fa-solid fa-search text-gray-500 text-sm"></i>
-                    <input type="text" placeholder="Search" class="bg-transparent border-none outline-none text-sm ml-2 w-48 placeholder-gray-500">
+    <!-- Top Navigation -->
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200/80">
+        <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white font-bold text-xl shadow-md">
+                    HJ
+                </div>
+                <div>
+                    <span class="font-extrabold text-slate-900 text-base md:text-lg block leading-tight">Hassan Jatoi</span>
+                    <span class="text-xs text-slate-500 font-medium">CV & Document Writer</span>
                 </div>
             </div>
-            <div class="flex items-center gap-6 text-gray-500">
-                <div class="flex flex-col items-center cursor-pointer text-linkedin-text border-b-2 border-linkedin-text pb-1">
-                    <i class="fa-solid fa-home text-xl"></i>
-                    <span class="text-xs hidden md:block">Home</span>
-                </div>
-                <div class="flex flex-col items-center cursor-pointer hover:text-linkedin-text transition">
-                    <i class="fa-solid fa-user-group text-xl"></i>
-                    <span class="text-xs hidden md:block">Network</span>
-                </div>
-                <div class="flex flex-col items-center cursor-pointer hover:text-linkedin-text transition">
-                    <i class="fa-solid fa-briefcase text-xl"></i>
-                    <span class="text-xs hidden md:block">Jobs</span>
-                </div>
+            
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/923083500829" target="_blank" class="hidden sm:inline-flex items-center gap-2 wa-btn text-white text-xs md:text-sm font-semibold px-4 py-2.5 rounded-full">
+                    <i class="fa-brands fa-whatsapp text-base"></i> Direct Contact
+                </a>
+                <a href="https://professional-cv-document-center.vercel.app/" target="_blank" class="gradient-btn text-white text-xs md:text-sm font-semibold px-4 py-2.5 rounded-full">
+                    Portfolio
+                </a>
             </div>
         </div>
     </nav>
 
     <!-- Main Container -->
-    <main class="max-w-4xl mx-auto mt-6 px-0 md:px-4 pb-12 flex flex-col gap-4">
+    <main class="max-w-4xl mx-auto mt-6 px-3 sm:px-4 pb-16 space-y-6">
 
-        <!-- Profile Card -->
-        <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden relative">
-            <!-- Cover Photo (Preloaded for instant display) -->
-            <div class="h-36 sm:h-48 md:h-60 bg-gray-900 relative w-full overflow-hidden">
-                <img src="https://i.ibb.co/7JyQZc3q/Chat-GPT-Image-Aug-15-2026-08-34-48-PM.png" alt="Header Background" fetchpriority="high" class="w-full h-full object-cover">
+        <!-- Profile / Hero Section -->
+        <div class="glass-card rounded-3xl overflow-hidden relative border border-slate-200">
+            <!-- Cover Photo -->
+            <div class="h-40 sm:h-56 md:h-64 relative w-full overflow-hidden bg-slate-900">
+                <img src="https://i.ibb.co/7JyQZc3q/Chat-GPT-Image-Aug-15-2026-08-34-48-PM.png" alt="Header Background" fetchpriority="high" class="w-full h-full object-cover opacity-90">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
             </div>
 
-            <!-- Profile Picture (Preloaded for instant display) -->
-            <div class="absolute top-20 sm:top-28 md:top-36 left-4 md:left-6">
-                <img src="https://i.ibb.co/rKkSgc0n/Chat-GPT-Image-Aug-20-2026-08-15-04-PM.png" alt="Hassan Jatoi" fetchpriority="high" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white shadow-md object-cover bg-white">
-            </div>
-
-            <!-- Profile Info -->
-            <div class="pt-16 md:pt-20 px-4 md:px-6 pb-6">
-                <div class="flex flex-col md:flex-row justify-between items-start gap-4">
-                    <div>
-                        <h1 class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Hassan Jatoi</h1>
-                        <p class="text-lg md:text-xl text-gray-800 mt-1">CV & Document Writer | Professional Services</p>
-                        
-                        <!-- Contact Details & Location -->
-                        <div class="text-sm text-linkedin-muted mt-2 flex flex-wrap items-center gap-y-1 gap-x-2">
-                            <a href="https://maps.app.goo.gl/qav8UEgNJYerwpic9" target="_blank" class="text-linkedin-blue font-semibold hover:underline flex items-center gap-1">
-                                <i class="fa-solid fa-location-dot text-xs"></i> Mehar, Dadu, Sindh, Pakistan
-                            </a> 
-                            <span>•</span> 
-                            <a href="https://www.linkedin.com/in/hassanjatoi786" target="_blank" class="text-linkedin-blue font-semibold hover:underline flex items-center gap-1">
-                                <i class="fa-brands fa-linkedin text-xs"></i> LinkedIn Profile
-                            </a>
-                            <span>•</span> 
-                            <a href="tel:03083500829" class="text-linkedin-blue font-semibold hover:underline flex items-center gap-1">
-                                <i class="fa-solid fa-phone text-xs"></i> 03083500829
-                            </a>
-                            <span>•</span> 
-                            <a href="mailto:jatoihassan009@gmail.com" class="text-linkedin-blue font-semibold hover:underline flex items-center gap-1">
-                                <i class="fa-solid fa-envelope text-xs"></i> jatoihassan009@gmail.com
-                            </a>
-                        </div>
-                        <p class="text-sm text-linkedin-blue font-semibold mt-1">
-                            Affordable Charges
-                        </p>
+            <!-- Profile Info Container -->
+            <div class="relative px-5 sm:px-8 pb-8 pt-0">
+                <!-- Avatar & Status -->
+                <div class="flex justify-between items-end -mt-16 sm:-mt-20 mb-5 relative z-10">
+                    <div class="relative">
+                        <img src="https://i.ibb.co/rKkSgc0n/Chat-GPT-Image-Aug-20-2026-08-15-04-PM.png" alt="Hassan Jatoi" fetchpriority="high" class="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl border-4 border-white shadow-xl object-cover bg-white">
+                        <span class="absolute bottom-2 right-2 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full shadow" title="Available for Work"></span>
                     </div>
+                    <a href="https://wa.me/923083500829" target="_blank" class="wa-btn text-white font-bold py-2.5 px-5 rounded-xl text-sm flex items-center gap-2 shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
+                    </a>
+                </div>
+
+                <!-- Text Content -->
+                <div class="space-y-3">
                     <div>
-                        <a href="https://wa.me/923083500829" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded-full transition shadow-sm">
-                            <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
+                        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Hassan Jatoi</h1>
+                        <p class="text-base sm:text-lg font-semibold gradient-text mt-0.5">Professional CV & Document Writing Specialist</p>
+                    </div>
+
+                    <!-- Details Grid -->
+                    <div class="flex flex-wrap gap-2 sm:gap-4 text-xs sm:text-sm text-slate-600 font-medium pt-1">
+                        <a href="https://maps.app.goo.gl/qav8UEgNJYerwpic9" target="_blank" class="flex items-center gap-1.5 hover:text-brand-600 transition">
+                            <i class="fa-solid fa-location-dot text-brand-500"></i> Mehar, Dadu, Sindh, Pakistan
+                        </a>
+                        <span>•</span>
+                        <a href="https://www.linkedin.com/in/hassanjatoi786" target="_blank" class="flex items-center gap-1.5 hover:text-brand-600 transition">
+                            <i class="fa-brands fa-linkedin text-brand-600"></i> LinkedIn Profile
+                        </a>
+                        <span>•</span>
+                        <a href="tel:03083500829" class="flex items-center gap-1.5 hover:text-brand-600 transition">
+                            <i class="fa-solid fa-phone text-emerald-600"></i> 03083500829
                         </a>
                     </div>
+
+                    <!-- Quick Highlights & CTA -->
+                    <div class="pt-4 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200">
+                            <i class="fa-solid fa-tag"></i> Highly Affordable Charges
+                        </span>
+                        
+                        <div class="flex flex-wrap gap-2">
+                            <a href="https://professional-cv-document-center.vercel.app/" target="_blank" class="gradient-btn text-white text-xs font-bold py-2 px-4 rounded-xl">
+                                View Portfolio
+                            </a>
+                            <a href="https://g.page/r/CQbZjPuTbUrcEAE/review" target="_blank" class="bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold py-2 px-4 rounded-xl transition">
+                                Leave Review
+                            </a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
 
-                <!-- Action Buttons -->
-                <div class="flex flex-wrap gap-2 mt-4">
-                    <a href="https://professional-cv-document-center.vercel.app/" target="_blank" class="bg-linkedin-blue hover:bg-linkedin-dark text-white font-semibold py-1.5 px-4 md:px-6 rounded-full transition duration-200">
-                        View Portfolio
-                    </a>
-                    <a href="https://g.page/r/CQbZjPuTbUrcEAE/review" target="_blank" class="border border-linkedin-blue text-linkedin-blue hover:bg-blue-50 hover:border-linkedin-dark hover:text-linkedin-dark font-semibold py-1.5 px-4 md:px-6 rounded-full transition duration-200">
-                        Leave a Review
-                    </a>
-                    <a href="https://wa.me/923083500829" target="_blank" class="border border-emerald-600 text-emerald-600 hover:bg-emerald-50 font-semibold py-1.5 px-4 md:px-6 rounded-full transition duration-200 flex items-center gap-1.5">
-                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Contact
-                    </a>
+        <!-- Premium Stats Section -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="glass-card p-4 rounded-2xl text-center border border-slate-200/80">
+                <span class="block text-2xl sm:text-3xl font-extrabold text-brand-600">500+</span>
+                <span class="text-xs sm:text-sm font-semibold text-slate-500 mt-1 block">Documents Built</span>
+            </div>
+            <div class="glass-card p-4 rounded-2xl text-center border border-slate-200/80">
+                <span class="block text-2xl sm:text-3xl font-extrabold text-emerald-600">100+</span>
+                <span class="text-xs sm:text-sm font-semibold text-slate-500 mt-1 block">Happy Clients</span>
+            </div>
+            <div class="glass-card p-4 rounded-2xl text-center border border-slate-200/80">
+                <span class="block text-2xl sm:text-3xl font-extrabold text-purple-600">15+</span>
+                <span class="text-xs sm:text-sm font-semibold text-slate-500 mt-1 block">Services Offered</span>
+            </div>
+            <div class="glass-card p-4 rounded-2xl text-center border border-slate-200/80">
+                <span class="block text-2xl sm:text-3xl font-extrabold text-amber-500">24/7</span>
+                <span class="text-xs sm:text-sm font-semibold text-slate-500 mt-1 block">Online Support</span>
+            </div>
+        </div>
+
+        <!-- About Services Section -->
+        <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-brand-600">
+                <i class="fa-solid fa-star"></i> Professional Expertise
+            </div>
+            <h2 class="text-xl sm:text-2xl font-bold text-slate-900">About My Writing & Editing Services</h2>
+            <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                Dear Friends & Job Seekers! 👋 Get your professional CV / Resume custom designed to significantly boost your career and job interview chances. High quality, ATS-friendly, and eye-catching documents tailored to international standards.
+            </p>
+
+            <div class="pt-2 flex flex-wrap gap-2">
+                <span class="badge-pill text-brand-700 text-xs font-semibold px-3 py-1.5 rounded-lg">#ATS_CV</span>
+                <span class="badge-pill text-brand-700 text-xs font-semibold px-3 py-1.5 rounded-lg">#Europass_CV</span>
+                <span class="badge-pill text-brand-700 text-xs font-semibold px-3 py-1.5 rounded-lg">#Cover_Letter</span>
+                <span class="badge-pill text-brand-700 text-xs font-semibold px-3 py-1.5 rounded-lg">#Exam_Notes</span>
+                <span class="badge-pill text-brand-700 text-xs font-semibold px-3 py-1.5 rounded-lg">#Document_Editing</span>
+            </div>
+        </div>
+
+        <!-- Professional Services Grid -->
+        <div class="space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-1">
+                <div>
+                    <span class="text-xs font-extrabold tracking-wider uppercase text-brand-600">What I Do</span>
+                    <h2 class="text-2xl font-extrabold text-slate-900">Professional Services</h2>
                 </div>
+                <p class="text-xs sm:text-sm text-slate-500">Click any service to instantly inquire on WhatsApp</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                
+                <!-- Service Card 1 -->
+                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20a%20CV%20or%20Resume." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
+                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
+                        <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">CV / Resume / Cover Letter</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Professional job documents tailored specifically to your career goals.</p>
+                </a>
+
+                <!-- Service Card 2 -->
+                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20an%20Europass%20or%20ATS%20CV." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
+                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
+                        <i class="fa-solid fa-file-circle-check"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Europass & ATS CV</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Modern, professional, and ATS-compliant CV formats for international markets.</p>
+                </a>
+
+                <!-- Service Card 3 -->
+                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20NTS%2C%20PTS%20or%20PPSC%20preparation%20notes." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
+                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">NTS / PTS / PPSC Preparation</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Exam preparation material, updated notes, and comprehensive study resources.</p>
+                </a>
+
+                <!-- Service Card 4 -->
+                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20test%20preparation%20notes%20or%20syllabus." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
+                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Test Preparation & Syllabus</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Organized notes, solved Q&As, and updated syllabus content.</p>
+                </a>
+
+                <!-- Service Card 5 -->
+                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20an%20educational%20notice%20or%20document." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
+                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Educational Documents</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Clean formatting for educational notices and official paperwork.</p>
+                </a>
+
+                <!-- Service Card 6 -->
+                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20a%20School%20or%20College%20ID%20Card." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
+                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">School / College ID Cards</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Custom professional student and institutional ID card designs.</p>
+                </a>
+
+                <!-- Service Card 7 -->
+                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20an%20application%20or%20official%20letter." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
+                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Applications & Official Letters</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Formal job applications, official request letters, and document formatting.</p>
+                </a>
+
+                <!-- Service Card 8 -->
+                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20a%20certificate%20designed%20or%20edited." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
+                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Certificate Designing</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Elegant certificates for professional training, events, and academics.</p>
+                </a>
+
+                <!-- Service Card 9 -->
+                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20background%20removal%20or%20background%20change." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
+                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
+                        <i class="fa-solid fa-image"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Background Editing</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Precision background removal and professional studio replacement.</p>
+                </a>
+
+                <!-- Service Card 10 -->
+                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20dress%20change%20or%20passport%20size%20photo." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
+                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Passport Photo & Suit Edit</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Official passport-size photo prep with formal suit/dress changes.</p>
+                </a>
+
+                <!-- Service Card 11 -->
+                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20an%20old%20or%20damaged%20image%20enhanced." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
+                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Old Photo Enhancement</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Restoration, blur cleanup, and enhancement for old photos.</p>
+                </a>
+
+                <!-- Service Card 12 -->
+                <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20need%20a%20website%20or%20portfolio." target="_blank" class="glass-card glass-card-hover p-5 rounded-2xl block group">
+                    <div class="w-12 h-12 rounded-xl service-icon-box text-brand-600 flex items-center justify-center text-xl font-bold mb-3">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 transition text-base">Website & Portfolio Creation</h3>
+                    <p class="text-xs text-slate-500 mt-1 leading-relaxed">Responsive digital CV websites and custom personal portfolio pages.</p>
+                </a>
+
             </div>
         </div>
 
-        <!-- About / Services Section -->
-        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-4 md:p-6">
-            <h2 class="text-xl font-bold text-gray-900 mb-4">About Services</h2>
-            
-            <div class="text-sm text-gray-800 leading-relaxed whitespace-pre-line">
-                🌟 <span class="font-bold">Professional CV, Resume & Document Services</span> 🌟
-                
-                Dear Friends! 👋
-                Get your professional CV / Resume built and increase your job opportunities!
-                
-                📑 <span class="font-semibold">CV / Resume / Cover Letter</span>
-                🇪🇺 <span class="font-semibold">Europass & ATS CV</span>
-                🎓 <span class="font-semibold">NTS / PTS / PPSC Exam Preparation & Notes</span>
-                📚 <span class="font-semibold">Test Preparation Notes & Syllabus</span>
-                🏫 <span class="font-semibold">Educational Notices & Documents</span>
-                🪪 <span class="font-semibold">School/College ID Cards</span>
-                ✍️ <span class="font-semibold">Applications, Letters & Official Documents</span>
-                📜 <span class="font-semibold">Certificate Designing & Editing</span>
-                🖼️ <span class="font-semibold">Background Remove & Change</span>
-                👔 <span class="font-semibold">Cloth/Dress Change & Passport Size Photo</span>
-                ✨ <span class="font-semibold">Old/Damaged Image Enhance & Clear</span>
-                📄 <span class="font-semibold">PDF Books Creation</span>
-                📢 <span class="font-semibold">PDF Notices & Advertisements</span>
-                🌐 <span class="font-semibold">Website & Portfolio Creation</span>
-                📱 <span class="font-semibold">QR Code & Digital Documents</span>
-                🖨️ <span class="font-semibold">Certificates, Forms & Printable Documents</span>
-                
-                Give your career a professional look!
-                Contact today to get your professional documents created.
-                
-                <span class="font-semibold text-gray-900">Hassan Jatoi – CV & Document Writer</span>
-                🌍 Professional Services | Affordable Charges
+        <!-- Banner CTA -->
+        <div class="rounded-3xl p-6 sm:p-8 bg-gradient-to-r from-brand-900 via-brand-700 to-indigo-900 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl relative overflow-hidden">
+            <div class="space-y-1 text-center sm:text-left relative z-10">
+                <h3 class="text-xl sm:text-2xl font-extrabold">Give Your Career a Professional Look!</h3>
+                <p class="text-xs sm:text-sm text-blue-100">Contact directly on WhatsApp to get your documents ready in hours.</p>
             </div>
-            
-            <div class="mt-4 flex flex-wrap gap-x-2 gap-y-1">
-                <span class="hashtag">#CV</span>
-                <span class="hashtag">#Resume</span>
-                <span class="hashtag">#CVWriting</span>
-                <span class="hashtag">#ATSResume</span>
-                <span class="hashtag">#EuropassCV</span>
-                <span class="hashtag">#CoverLetter</span>
-                <span class="hashtag">#JobSearch</span>
-                <span class="hashtag">#ExamPreparation</span>
-                <span class="hashtag">#DocumentEditing</span>
-                <span class="hashtag">#ProfessionalCV</span>
+            <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20would%20like%20to%20discuss%20your%20professional%20services." target="_blank" class="wa-btn text-white font-bold py-3 px-6 rounded-2xl text-sm flex items-center gap-2 whitespace-nowrap z-10">
+                <i class="fa-brands fa-whatsapp text-xl"></i> Get Started Now
+            </a>
+        </div>
+
+        <!-- International CV Preview Section -->
+        <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-2 text-xs font-extrabold tracking-wider uppercase text-brand-600">
+                <i class="fa-solid fa-earth-americas"></i> International Formats
+            </div>
+            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900">CVs for Europe, Gulf & Global Markets</h2>
+            <p class="text-xs sm:text-sm text-slate-600">Professional CVs tailored for European countries, UAE, Saudi Arabia, Qatar, Oman, Kuwait, and Australia.</p>
+
+            <a href="cv-studio-country-preview.png" target="_blank" class="block overflow-hidden rounded-2xl border border-slate-200 group">
+                <img src="cv-studio-country-preview.png" alt="International CV Studio Preview" class="w-full h-auto object-cover group-hover:scale-[1.02] transition duration-500">
+            </a>
+
+            <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-3 py-1 rounded-lg bg-blue-50 text-blue-700 text-xs font-bold">🇪🇺 Europe</span>
+                <span class="px-3 py-1 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-bold">🇦🇪 UAE</span>
+                <span class="px-3 py-1 rounded-lg bg-emerald-50 text-emerald-700 text-xs font-bold">🇸🇦 Saudi Arabia</span>
+                <span class="px-3 py-1 rounded-lg bg-purple-50 text-purple-700 text-xs font-bold">🇶🇦 Qatar</span>
+                <span class="px-3 py-1 rounded-lg bg-orange-50 text-orange-700 text-xs font-bold">🇴🇲 Oman</span>
+                <span class="px-3 py-1 rounded-lg bg-red-50 text-red-700 text-xs font-bold">🇧🇭 Bahrain</span>
+                <span class="px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-bold">🇰🇼 Kuwait</span>
             </div>
         </div>
 
-        <!-- Featured Highlights -->
-        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-4 md:p-6">
-            <h2 class="text-xl font-bold text-gray-900 mb-4">Featured Highlights</h2>
+        <!-- Featured Highlights Grid -->
+        <div class="glass-card rounded-3xl p-6 sm:p-8 space-y-4">
+            <h2 class="text-xl font-bold text-slate-900">Featured Portfolio & Links</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 
-                <!-- Detailed Work Activity Link -->
-                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7494423064567541760/" target="_blank" class="block border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition group">
-                    <div class="h-32 bg-gray-100 flex items-center justify-center border-b border-gray-200 relative overflow-hidden">
-                        <img src="https://placehold.co/600x300/0a66c2/ffffff?text=LinkedIn+Work+Update" alt="LinkedIn Activity" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="p-3">
-                        <h3 class="font-semibold text-gray-900 line-clamp-1 group-hover:text-linkedin-blue">My Professional Work Activity on LinkedIn</h3>
-                        <p class="text-xs text-linkedin-muted mt-1">linkedin.com/feed/update</p>
-                        <p class="text-sm text-gray-700 mt-2 line-clamp-2">Detailed overview of my professional CV writing services, client success stories, and career guidance posts.</p>
-                    </div>
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7494423064567541760/" target="_blank" class="border border-slate-200/80 rounded-2xl p-4 hover:border-brand-500 transition group block bg-white">
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 text-sm">LinkedIn Activity & Updates</h3>
+                    <p class="text-xs text-slate-500 mt-1 line-clamp-2">Detailed overview of my professional CV writing services and client feedback.</p>
                 </a>
 
-                <!-- Vercel Portfolio Link -->
-                <a href="https://professional-cv-document-center.vercel.app/" target="_blank" class="block border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition group">
-                    <div class="h-32 bg-gray-100 flex items-center justify-center border-b border-gray-200 relative overflow-hidden">
-                        <img src="https://placehold.co/600x300/111827/ffffff?text=Portfolio+Website" alt="Portfolio" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="p-3">
-                        <h3 class="font-semibold text-gray-900 line-clamp-1 group-hover:text-linkedin-blue">My Professional Work Portfolio</h3>
-                        <p class="text-xs text-linkedin-muted mt-1">professional-cv-document-center.vercel.app</p>
-                        <p class="text-sm text-gray-700 mt-2 line-clamp-2">Check out my recent CV designs and professional document writing samples. Clients can view my complete work here.</p>
-                    </div>
+                <a href="https://professional-cv-document-center.vercel.app/" target="_blank" class="border border-slate-200/80 rounded-2xl p-4 hover:border-brand-500 transition group block bg-white">
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 text-sm">Professional Work Portfolio</h3>
+                    <p class="text-xs text-slate-500 mt-1 line-clamp-2">Explore live work samples and CV designs on my Vercel portfolio.</p>
                 </a>
 
-                <!-- Google Reviews Link -->
-                <a href="https://g.page/r/CQbZjPuTbUrcEAE/review" target="_blank" class="block border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition group">
-                    <div class="h-32 bg-gray-100 flex items-center justify-center border-b border-gray-200 relative overflow-hidden">
-                        <img src="https://placehold.co/600x300/fbbc04/ffffff?text=Google+Reviews+⭐" alt="Reviews" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="p-3">
-                        <h3 class="font-semibold text-gray-900 line-clamp-1 group-hover:text-linkedin-blue">Leave a Review on Google</h3>
-                        <p class="text-xs text-linkedin-muted mt-1">g.page/r/CQbZjPuTbUrcEAE/review</p>
-                        <p class="text-sm text-gray-700 mt-2 line-clamp-2">Happy with my CV services? Please share your valuable feedback and help others discover my professional services.</p>
-                    </div>
+                <a href="https://g.page/r/CQbZjPuTbUrcEAE/review" target="_blank" class="border border-slate-200/80 rounded-2xl p-4 hover:border-brand-500 transition group block bg-white">
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 text-sm">Google Reviews ⭐</h3>
+                    <p class="text-xs text-slate-500 mt-1 line-clamp-2">Read real reviews from satisfied job candidates or drop your own feedback.</p>
                 </a>
 
-                <!-- Google Business Post Link -->
-                <a href="https://www.google.com/search?sca_esv=9035e449288dd937&authuser=0&hl=en&output=search&q=Professional+CV+%26+Document+Center&ludocid=15873620318968666374&lsig=AB86z5UNdTmcvK7JG4OtTUCqVk6z&ved=1i%3A3%2Ct%3A109124%2Ce%3A2%2Cp%3AoRSHar3gJuKrkdUP4eiMoQo%3A1#lpstate=pid:8420338217030893950" target="_blank" class="block border border-gray-200 rounded-lg overflow-hidden hover:shadow-md transition group">
-                    <div class="h-32 bg-gray-100 flex items-center justify-center border-b border-gray-200 relative overflow-hidden">
-                         <img src="https://placehold.co/600x300/34a853/ffffff?text=Google+Business+Updates" alt="Google Post" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
-                    </div>
-                    <div class="p-3">
-                        <h3 class="font-semibold text-gray-900 line-clamp-1 group-hover:text-linkedin-blue">Latest Google Updates & Posts</h3>
-                        <p class="text-xs text-linkedin-muted mt-1">Google Business Profile</p>
-                        <p class="text-sm text-gray-700 mt-2 line-clamp-2">View the latest announcements, offers, and posts from my Google Business profile.</p>
-                    </div>
+                <a href="https://www.google.com/search?q=Professional+CV+%26+Document+Center" target="_blank" class="border border-slate-200/80 rounded-2xl p-4 hover:border-brand-500 transition group block bg-white">
+                    <h3 class="font-bold text-slate-900 group-hover:text-brand-600 text-sm">Google Business Listing</h3>
+                    <p class="text-xs text-slate-500 mt-1 line-clamp-2">Check official contact details, operating hours, and location on Google.</p>
                 </a>
 
             </div>
         </div>
 
-        <footer class="text-center py-6 text-sm text-linkedin-muted">
+        <!-- Footer -->
+        <footer class="text-center py-6 text-xs text-slate-500 font-medium space-y-2">
             <p>&copy; 2026 Hassan Jatoi - Professional CV & Document Center. All rights reserved.</p>
-            <p class="mt-1"><a href="https://hassanalipoetry.vercel.app/sitemap.xml" target="_blank" class="hover:underline text-linkedin-blue">XML Sitemap</a></p>
+            <p><a href="https://hassanalipoetry.vercel.app/sitemap.xml" target="_blank" class="text-brand-600 hover:underline">XML Sitemap</a></p>
         </footer>
 
     </main>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923083500829?text=Hello%20Hassan%2C%20I%20would%20like%20to%20discuss%20your%20professional%20services." target="_blank" class="float-wa fixed right-5 bottom-5 w-14 h-14 rounded-full bg-emerald-600 text-white flex items-center justify-center text-2xl z-50 shadow-2xl" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
 </body>
 </html>
