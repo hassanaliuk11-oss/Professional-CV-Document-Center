@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- Updated Google Search Console Verification Meta Tag -->
+  <!-- Google Search Console Verification Meta Tag -->
   <meta name="google-site-verification" content="D9U4FW1xUX0jGbss1thwdhjRNQcqammsqvBxrr9sL7w" />
   
-  <title>Professional CV & Document Center</title>
+  <title>Professional CV & Document Center | Hassan Jatoi</title>
   
   <!-- Schema.org Structured Data for Local Business -->
   <script type="application/ld+json">
@@ -19,7 +19,9 @@
     "telephone": "+923083500829",
     "hasMap": "https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA",
     "sameAs": [
-      "https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA"
+      "https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA",
+      "https://www.linkedin.com/in/hassanjatoi786",
+      "https://www.facebook.com/share/1JWWY4JW22/"
     ]
   }
   </script>
@@ -35,253 +37,756 @@
     }
     .btn-shine:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 20px -10px rgba(217, 119, 6, 0.5);
+      box-shadow: 0 10px 25px -10px rgba(217, 119, 6, 0.6);
+    }
+    .chat-bubble-pulse {
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+      70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(245, 158, 11, 0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+    }
+    .glass-effect {
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+    }
+    /* Ticker animation */
+    @keyframes tickerFade {
+      0% { opacity: 0; transform: translateY(5px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .ticker-animate {
+      animation: tickerFade 0.4s ease-out forwards;
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-amber-400 selection:text-slate-950">
 
-  <!-- Header -->
-  <header class="bg-slate-950 text-white py-4 border-b border-white/10 sticky top-0 z-50">
+  <!-- Live Rush / Recent Orders Ticker Bar -->
+  <div class="bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 text-slate-950 font-bold text-xs py-2 px-4 shadow-md sticky top-0 z-50 overflow-hidden">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 flex-wrap">
+      <div class="flex items-center gap-2">
+        <span class="bg-slate-950 text-amber-400 text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wider animate-pulse flex items-center gap-1">
+          <i class="fa-solid fa-fire text-amber-400"></i> LIVE RUSH
+        </span>
+        <span id="liveTickerText" class="ticker-animate font-extrabold text-slate-950 truncate">
+          🔥 Muhammad Ali (Karachi) just ordered Pro ATS CV Package (2 mins ago)
+        </span>
+      </div>
+      <div class="hidden sm:flex items-center gap-3 text-[11px] text-slate-950 font-black">
+        <span>⚡ 42 Orders in progress today</span>
+        <span>•</span>
+        <span>🕒 Avg Delivery: 4 Hours</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Bar & Header -->
+  <header class="bg-slate-950 text-white py-3.5 border-b border-white/10 sticky top-[36px] sm:top-[38px] z-40 shadow-xl">
     <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-      <h1 class="text-xl font-bold text-amber-400">Professional CV & Document Center</h1>
-      <div class="flex items-center gap-3">
-        <a href="https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-amber-400 text-xs font-bold px-3 py-2 rounded-lg flex items-center gap-1.5 border border-amber-400/30">
-          <i class="fa-solid fa-location-dot"></i> Maps
+      <a href="#" class="flex items-center gap-2.5 group">
+        <img src="https://i.ibb.co/DfDdvnp2/profile.jpg" alt="Hassan Jatoi Profile" class="w-10 h-10 rounded-full object-cover border-2 border-amber-400 shadow-md group-hover:scale-105 transition-transform" onerror="this.src='https://placehold.co/100x100/1e293b/fbbf24?text=HJ'">
+        <div>
+          <h1 class="text-sm sm:text-lg font-extrabold text-amber-400 tracking-tight">Professional CV Center</h1>
+          <p class="text-[10px] text-slate-400 font-medium">Verified Official Hub • Mehar, Sindh</p>
+        </div>
+      </a>
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA" target="_blank" class="bg-slate-900 hover:bg-slate-800 text-amber-400 text-xs font-bold px-3 py-2 rounded-xl flex items-center gap-1.5 border border-amber-400/30 transition-all hover:scale-105">
+          <i class="fa-solid fa-location-dot"></i> <span class="hidden sm:inline">Map Location</span>
         </a>
-        <a href="https://wa.me/923083500829" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-3.5 py-2 rounded-lg flex items-center gap-1.5">
-          <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
+        <a href="https://wa.me/923083500829?text=Hi%20Hassan,%20I%20want%20to%20order%20a%20professional%20CV." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-3.5 py-2 rounded-xl flex items-center gap-1.5 shadow-lg transition-all hover:scale-105">
+          <i class="fa-brands fa-whatsapp text-sm"></i> <span class="hidden sm:inline">WhatsApp Chat</span>
         </a>
       </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-slate-950 text-white py-20 border-b border-white/10">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <span class="bg-amber-400/10 text-amber-400 border border-amber-400/20 text-xs px-3.5 py-1.5 rounded-full font-bold uppercase tracking-wider">Verified Business</span>
-      <h2 class="text-4xl md:text-5xl font-extrabold mt-4 mb-6 leading-tight">Get Your Professional & ATS-Friendly CV Today</h2>
-      <p class="text-slate-400 text-sm md:text-base mb-8 max-w-2xl mx-auto">Stand out to recruiters with a high-quality international standard resume designed for jobs in Pakistan, Gulf, Europe, and worldwide.</p>
+  <section class="relative bg-slate-950 text-white py-20 lg:py-28 border-b border-white/15 overflow-hidden">
+    <div class="absolute inset-0 z-0 opacity-15 mix-blend-luminosity">
+      <img src="https://i.ibb.co/qF0yNz6K/cover.jpg" alt="Cover Letter Background" class="w-full h-full object-cover" onerror="this.style.display='none'">
+    </div>
+    
+    <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+      <div class="mb-6 flex justify-center">
+        <div class="relative p-1.5 rounded-full bg-gradient-to-tr from-amber-400 via-amber-500 to-amber-600 shadow-2xl animate-bounce duration-1000">
+          <img src="https://i.ibb.co/DfDdvnp2/profile.jpg" alt="Hassan Jatoi" class="w-28 h-28 sm:w-36 sm:h-36 rounded-full object-cover bg-slate-900 border-4 border-slate-950 shadow-inner" onerror="this.src='https://placehold.co/150x150/1e293b/fbbf24?text=Hassan'">
+        </div>
+      </div>
+
+      <div class="inline-flex items-center gap-2 bg-amber-400/10 text-amber-400 border border-amber-400/20 text-xs px-4 py-1.5 rounded-full font-bold uppercase tracking-widest mb-4">
+        <i class="fa-solid fa-shield-halved"></i> Verified Business • Expert Managed by Hassan Jatoi
+      </div>
+      
+      <h2 class="text-3xl sm:text-5xl lg:text-6xl font-black mt-2 mb-4 leading-tight tracking-tight">
+        Professional CVs Designed for the <span class="text-amber-400 underline decoration-amber-400/40">Global Job Market</span>
+      </h2>
+
+      <!-- Flag Icons for Europe & Gulf Countries -->
+      <div class="flex flex-wrap justify-center items-center gap-3 mb-6">
+        <span class="bg-slate-900/90 border border-white/10 text-slate-300 text-xs font-bold px-3 py-1.5 rounded-xl flex items-center gap-2 shadow-md">
+          🇦🇪 UAE
+        </span>
+        <span class="bg-slate-900/90 border border-white/10 text-slate-300 text-xs font-bold px-3 py-1.5 rounded-xl flex items-center gap-2 shadow-md">
+          🇸🇦 Saudi Arabia
+        </span>
+        <span class="bg-slate-900/90 border border-white/10 text-slate-300 text-xs font-bold px-3 py-1.5 rounded-xl flex items-center gap-2 shadow-md">
+          🇶🇦 Qatar
+        </span>
+        <span class="bg-slate-900/90 border border-white/10 text-slate-300 text-xs font-bold px-3 py-1.5 rounded-xl flex items-center gap-2 shadow-md">
+          🇪🇺 Europe
+        </span>
+        <span class="bg-slate-900/90 border border-white/10 text-slate-300 text-xs font-bold px-3 py-1.5 rounded-xl flex items-center gap-2 shadow-md">
+          🇩🇪 Germany
+        </span>
+        <span class="bg-slate-900/90 border border-white/10 text-slate-300 text-xs font-bold px-3 py-1.5 rounded-xl flex items-center gap-2 shadow-md">
+          🇬🇧 UK
+        </span>
+      </div>
+
+      <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto mb-10 leading-relaxed">
+        Stand out to top recruiters in Pakistan, Gulf (UAE, KSA), Europe, and worldwide. Custom international standard resume writing, cover letters, and document services.
+      </p>
+      
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="#order" class="btn-shine text-white font-bold px-8 py-4 rounded-xl text-sm inline-block">Order Your CV Now</a>
-        <a href="https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA" target="_blank" class="bg-slate-900 border border-white/20 hover:bg-slate-800 text-white font-bold px-6 py-4 rounded-xl text-sm flex items-center justify-center gap-2">
-          <i class="fa-solid fa-map-location-dot text-amber-400"></i> View Google Location
+        <a href="#order" class="btn-shine text-slate-950 font-black px-8 py-4 rounded-2xl text-sm inline-flex items-center gap-2 shadow-2xl">
+          <i class="fa-solid fa-file-lines"></i> Order Your CV Now
+        </a>
+        <a href="https://wa.me/923083500829?text=Hi%20Hassan,%20I%20have%20some%20questions%20regarding%20CV%20packages." target="_blank" class="bg-emerald-600/90 hover:bg-emerald-600 border border-emerald-400/30 text-white font-bold px-7 py-4 rounded-2xl text-sm inline-flex items-center gap-2 transition-all shadow-lg">
+          <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp Inquiry
+        </a>
+      </div>
+
+      <!-- Quick Social & Location Bar -->
+      <div class="mt-10 pt-8 border-t border-white/10 flex flex-wrap justify-center items-center gap-6 text-slate-400 text-xs font-semibold">
+        <a href="https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA" target="_blank" class="hover:text-amber-400 transition-colors flex items-center gap-2 bg-slate-900/80 px-4 py-2 rounded-xl border border-white/10">
+          <i class="fa-solid fa-map-pin text-amber-400"></i> Mehar, Sindh, Pakistan
+        </a>
+        <a href="https://www.linkedin.com/in/hassanjatoi786" target="_blank" class="hover:text-amber-400 transition-colors flex items-center gap-2 bg-slate-900/80 px-4 py-2 rounded-xl border border-white/10">
+          <i class="fa-brands fa-linkedin text-blue-400"></i> LinkedIn Profile
+        </a>
+        <a href="https://www.facebook.com/share/1JWWY4JW22/" target="_blank" class="hover:text-amber-400 transition-colors flex items-center gap-2 bg-slate-900/80 px-4 py-2 rounded-xl border border-white/10">
+          <i class="fa-brands fa-facebook text-blue-500"></i> Facebook Page
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Location Banner -->
-  <section class="bg-amber-500 text-slate-950 py-3 font-bold text-xs text-center border-b border-amber-600">
-    <div class="max-w-7xl mx-auto px-4 flex items-center justify-center gap-2 flex-wrap">
-      <i class="fa-solid fa-store"></i>
-      <span>Visit our Google Profile: <strong>Professional CV & Document Center</strong></span>
-      <a href="https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA" target="_blank" class="underline hover:text-white ml-2">Open Google Maps →</a>
+  <!-- Google 5-Star Review Callout Banner -->
+  <section class="py-12 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 border-y border-amber-600 shadow-xl relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 bg-slate-950 text-amber-400 text-xs px-4 py-1.5 rounded-full font-black uppercase tracking-widest mb-3 shadow-md">
+        <i class="fa-brands fa-google text-amber-400"></i> Google Verified Local Business
+      </div>
+      <h3 class="text-2xl sm:text-3xl font-black mb-3 leading-tight">
+        “If you are satisfied with our service, please leave us a 5-star review on Google. Your feedback would mean a lot to us. Thank you!” ⭐⭐⭐⭐⭐
+      </h3>
+      <p class="text-slate-900 font-medium text-xs sm:text-sm max-w-xl mx-auto mb-6">
+        Click the button below to visit our official Google Maps listing and rate your experience!
+      </p>
+      <a href="https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA?g_st=awb" target="_blank" class="bg-slate-950 hover:bg-slate-900 text-amber-400 font-extrabold px-8 py-4 rounded-2xl text-sm inline-flex items-center gap-3 shadow-2xl hover:scale-105 transition-all">
+        <img src="https://www.gstatic.com/images/branding/product/1x/maps_512dp.png" alt="Google Maps" class="w-6 h-6 object-contain">
+        <span>Leave a 5-Star Review on Google Maps</span>
+        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+      </a>
     </div>
   </section>
 
-  <!-- Pricing / Packages Section -->
+  <!-- Location Banner -->
+  <div class="bg-slate-900 text-white py-3.5 px-4 font-bold text-xs text-center border-b border-white/10 shadow-md sticky top-[103px] sm:top-[105px] z-30">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+      <i class="fa-solid fa-store text-amber-400 text-sm animate-pulse"></i>
+      <span>Google Profile: <strong class="text-amber-400">Professional CV & Document Center</strong> (Mehar, Sindh)</span>
+      <a href="https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA" target="_blank" class="bg-amber-400 text-slate-950 px-3 py-1 rounded-lg ml-2 hover:bg-amber-300 transition-colors shadow-sm font-black">Open Google Maps 🗺️</a>
+    </div>
+  </div>
+
+  <!-- Pricing & Packages Section -->
   <section id="pricing" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-14">
-        <span class="inline-block bg-amber-100 text-amber-800 font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">Packages</span>
-        <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Choose Your Package</h2>
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="inline-block bg-amber-100 text-amber-800 font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-widest">Professional Tiers</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3 tracking-tight">Choose Your CV Package</h2>
+        <p class="text-slate-500 text-xs sm:text-sm mt-2">Select the ideal format designed for your career level and target destination.</p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-3 gap-8 items-stretch">
         <!-- Basic -->
-        <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 flex flex-col justify-between">
+        <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all group">
           <div>
-            <h3 class="text-xl font-bold text-slate-900">Basic CV</h3>
-            <p class="text-slate-500 text-xs mt-1">For fresh graduates & entry-level</p>
-            <div class="my-6">
-              <span class="text-2xl font-black text-slate-900">Standard Rate</span>
+            <div class="flex justify-between items-start mb-4">
+              <span class="bg-slate-200 text-slate-800 font-bold text-[10px] px-3 py-1 rounded-full uppercase">Entry Level</span>
+              <i class="fa-solid fa-graduation-cap text-slate-400 text-xl group-hover:text-amber-600 transition-colors"></i>
             </div>
-            <ul class="text-xs space-y-3 text-slate-600 font-medium">
-              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Modern CV Design</li>
-              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> High-Res PDF Format</li>
-              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> 24-Hour Delivery</li>
+            <h3 class="text-2xl font-black text-slate-900">Basic CV Design</h3>
+            <p class="text-slate-500 text-xs mt-1">Best for fresh graduates & entry-level applicants.</p>
+            <div class="my-6 py-4 border-y border-slate-200">
+              <span class="text-xl font-extrabold text-slate-900">Standard Affordable Rate</span>
+              <p class="text-[10px] text-slate-400">Quick turnaround & clean layout</p>
+            </div>
+            <ul class="text-xs space-y-3.5 text-slate-600 font-medium">
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i> Modern Professional Layout</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i> High-Resolution PDF Format</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i> Fast Delivery</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i> 1 Free Revision</li>
             </ul>
           </div>
-          <a href="#order" class="mt-8 bg-slate-900 text-white text-center py-3.5 rounded-xl font-bold text-sm block">Select Basic</a>
+          <button onclick="selectPackageAndScroll('Basic CV Design')" class="mt-8 bg-slate-900 hover:bg-slate-800 text-white text-center py-4 rounded-2xl font-bold text-xs uppercase tracking-wider block transition-all shadow-md hover:shadow-lg">
+            Select Basic Package
+          </button>
         </div>
 
-        <!-- Standard (Featured) -->
-        <div class="bg-slate-950 text-white p-8 rounded-3xl border-2 border-amber-400 relative flex flex-col justify-between shadow-2xl">
-          <span class="absolute -top-3.5 right-6 bg-amber-400 text-slate-900 font-black text-[10px] px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
+        <!-- Standard / Pro (Featured) -->
+        <div class="bg-slate-950 text-white p-8 rounded-3xl border-2 border-amber-400 relative flex flex-col justify-between shadow-2xl scale-105 z-10">
+          <span class="absolute -top-3.5 right-6 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 font-black text-[10px] px-4 py-1.5 rounded-full uppercase tracking-widest shadow-md">Most Popular 🔥</span>
           <div>
-            <h3 class="text-xl font-bold">Pro ATS Package</h3>
-            <p class="text-slate-400 text-xs mt-1">For experienced professionals</p>
-            <div class="my-6">
-              <span class="text-2xl font-black text-amber-400">Best Value</span>
+            <div class="flex justify-between items-start mb-4">
+              <span class="bg-amber-400/20 text-amber-400 font-bold text-[10px] px-3 py-1 rounded-full uppercase">Experienced</span>
+              <i class="fa-solid fa-award text-amber-400 text-xl"></i>
             </div>
-            <ul class="text-xs space-y-3 text-slate-300 font-medium">
-              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> ATS-Friendly CV Design</li>
-              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Matching Cover Letter</li>
-              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Editable Source File Option</li>
-              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Unlimited Revisions</li>
+            <h3 class="text-2xl font-black text-amber-400">Pro ATS Package</h3>
+            <p class="text-slate-400 text-xs mt-1">Designed to pass Applicant Tracking Systems.</p>
+            <div class="my-6 py-4 border-y border-white/10">
+              <span class="text-xl font-black text-white">Best Value Choice</span>
+              <p class="text-[10px] text-amber-400/80">Complete job application suite</p>
+            </div>
+            <ul class="text-xs space-y-3.5 text-slate-300 font-medium">
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-amber-400 text-sm"></i> ATS-Friendly Master Format</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-amber-400 text-sm"></i> Custom Matching Cover Letter</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-amber-400 text-sm"></i> Editable Source File Included</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-amber-400 text-sm"></i> Priority Support & Revisions</li>
             </ul>
           </div>
-          <a href="#order" class="mt-8 btn-shine text-white text-center py-3.5 rounded-xl font-bold text-sm block">Select Pro Package</a>
+          <button onclick="selectPackageAndScroll('Pro ATS CV Package')" class="mt-8 btn-shine text-slate-950 text-center py-4 rounded-2xl font-black text-xs uppercase tracking-wider block shadow-xl hover:scale-[1.02] transition-transform">
+            Select Pro Package
+          </button>
         </div>
 
         <!-- Premium -->
-        <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 flex flex-col justify-between">
+        <div class="bg-slate-50 p-8 rounded-3xl border border-slate-200 flex flex-col justify-between shadow-sm hover:shadow-xl transition-all group">
           <div>
-            <h3 class="text-xl font-bold text-slate-900">Global Job Package</h3>
-            <p class="text-slate-500 text-xs mt-1">For Gulf, Europe & Overseas jobs</p>
-            <div class="my-6">
-              <span class="text-2xl font-black text-slate-900">Complete Suite</span>
+            <div class="flex justify-between items-start mb-4">
+              <span class="bg-slate-200 text-slate-800 font-bold text-[10px] px-3 py-1 rounded-full uppercase">International</span>
+              <i class="fa-solid fa-earth-americas text-slate-400 text-xl group-hover:text-amber-600 transition-colors"></i>
             </div>
-            <ul class="text-xs space-y-3 text-slate-600 font-medium">
-              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Country-Specific CV Format</li>
-              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> English / Arabic Option</li>
-              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Cover Letter + LinkedIn Tips</li>
-              <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Priority Delivery</li>
+            <h3 class="text-2xl font-black text-slate-900">Global Job Package</h3>
+            <p class="text-slate-500 text-xs mt-1">Tailored for Gulf, Europe, and Overseas jobs.</p>
+            <div class="my-6 py-4 border-y border-slate-200">
+              <span class="text-xl font-extrabold text-slate-900">Complete Suite</span>
+              <p class="text-[10px] text-slate-400">International standards & priority</p>
+            </div>
+            <ul class="text-xs space-y-3.5 text-slate-600 font-medium">
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i> Country-Specific Format</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i> English / Arabic Layout Option</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i> LinkedIn Optimization Tips</li>
+              <li class="flex items-center gap-2.5"><i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i> Priority 24/7 Support</li>
             </ul>
           </div>
-          <a href="#order" class="mt-8 bg-slate-900 text-white text-center py-3.5 rounded-xl font-bold text-sm block">Select Global</a>
+          <button onclick="selectPackageAndScroll('Global Job Package')" class="mt-8 bg-slate-900 hover:bg-slate-800 text-white text-center py-4 rounded-2xl font-bold text-xs uppercase tracking-wider block transition-all shadow-md hover:shadow-lg">
+            Select Global Package
+          </button>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Payment Methods Section -->
-  <section class="py-12 bg-slate-900 text-white border-y border-white/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <span class="inline-block bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs px-3.5 py-1 rounded-full uppercase font-bold tracking-wider mb-3">Easy & Secure Payment</span>
-      <h3 class="text-2xl font-bold mb-6">Payment Options</h3>
+  <section class="py-16 bg-slate-950 text-white border-y border-white/10 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <span class="inline-block bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs px-4 py-1.5 rounded-full uppercase font-bold tracking-widest mb-3">Secure Transactions</span>
+      <h3 class="text-2xl sm:text-3xl font-black mb-3">Official Payment Account Details</h3>
+      <p class="text-slate-400 text-xs sm:text-sm mb-10 max-w-xl mx-auto">Transfer fees securely via JazzCash or Bank Transfer using the exact verified credentials below.</p>
       
-      <div class="flex flex-wrap justify-center items-center gap-6">
+      <div class="grid md:grid-cols-2 gap-6 justify-center text-left">
         <!-- JazzCash Card -->
-        <div class="bg-white/5 border border-white/10 p-5 rounded-2xl flex items-center gap-4 min-w-[280px]">
-          <div class="w-12 h-12 bg-red-600 text-white font-black text-xl rounded-xl flex items-center justify-center">
-            JC
+        <div class="bg-slate-900/90 border border-white/10 p-6 rounded-3xl relative overflow-hidden shadow-xl hover:border-red-500/50 transition-colors">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-red-600/10 rounded-bl-full pointer-events-none"></div>
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-14 h-14 bg-red-600 text-white font-black text-base rounded-2xl flex items-center justify-center shadow-lg flex-shrink-0">
+              JC
+            </div>
+            <div>
+              <p class="text-xs text-slate-400 font-semibold">JazzCash / Mobile Account</p>
+              <h4 class="text-lg sm:text-xl font-black text-amber-400 select-all cursor-pointer" onclick="copyToClipboard('03083500829', this)">03083500829 <i class="fa-regular fa-copy text-xs ml-1 text-slate-400"></i></h4>
+            </div>
           </div>
-          <div class="text-left">
-            <p class="text-xs text-slate-400 font-medium">JazzCash Account</p>
-            <p class="text-lg font-bold text-amber-400">03083500829</p>
-            <p class="text-[11px] text-slate-300">Account Title: Hassan Jatoi</p>
+          <div class="space-y-2 text-xs text-slate-300 border-t border-white/10 pt-4">
+            <p class="flex justify-between"><span class="text-slate-400">Account Title:</span> <strong class="text-white">HASSAN ALI</strong></p>
+            <p class="flex justify-between"><span class="text-slate-400">Network:</span> <strong class="text-white">JazzCash</strong></p>
           </div>
+          <button onclick="copyToClipboard('03083500829', null)" class="mt-4 w-full bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2">
+            <i class="fa-solid fa-copy"></i> Copy JazzCash Number
+          </button>
         </div>
 
-        <!-- EasyPaisa / Bank Option -->
-        <div class="bg-white/5 border border-white/10 p-5 rounded-2xl flex items-center gap-4 min-w-[280px]">
-          <div class="w-12 h-12 bg-emerald-600 text-white font-black text-xl rounded-xl flex items-center justify-center">
-            EP
+        <!-- IBAN Bank Card -->
+        <div class="bg-slate-900/90 border border-white/10 p-6 rounded-3xl relative overflow-hidden shadow-xl hover:border-emerald-500/50 transition-colors">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-emerald-600/10 rounded-bl-full pointer-events-none"></div>
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-14 h-14 bg-emerald-600 text-white font-black text-xs rounded-2xl flex items-center justify-center shadow-lg flex-shrink-0">
+              IBAN
+            </div>
+            <div>
+              <p class="text-xs text-slate-400 font-semibold">Bank Account / IBAN</p>
+              <h4 class="text-xs sm:text-sm font-mono font-black text-amber-400 break-all select-all cursor-pointer" onclick="copyToClipboard('PK88JCMA1109923083500829', this)">PK88JCMA1109923083500829 <i class="fa-regular fa-copy text-xs ml-1 text-slate-400"></i></h4>
+            </div>
           </div>
-          <div class="text-left">
-            <p class="text-xs text-slate-400 font-medium">EasyPaisa / Bank Transfer</p>
-            <p class="text-sm font-bold text-white">Available on Request</p>
-            <p class="text-[11px] text-slate-300">Contact on WhatsApp for details</p>
+          <div class="space-y-2 text-xs text-slate-300 border-t border-white/10 pt-4">
+            <p class="flex justify-between"><span class="text-slate-400">Account Title:</span> <strong class="text-white">HASSAN ALI</strong></p>
+            <p class="flex justify-between"><span class="text-slate-400">Bank Name:</span> <strong class="text-white">JazzCash Microfinance Bank</strong></p>
           </div>
+          <button onclick="copyToClipboard('PK88JCMA1109923083500829', null)" class="mt-4 w-full bg-slate-800 hover:bg-slate-700 text-amber-400 font-bold py-2.5 rounded-xl text-xs transition-colors flex items-center justify-center gap-2">
+            <i class="fa-solid fa-copy"></i> Copy IBAN Number
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase Portfolio Section -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <span class="inline-block bg-indigo-50 text-indigo-700 font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-widest mb-3">Portfolio Standard</span>
+      <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4">Professional Work Showcase</h3>
+      <p class="text-slate-500 text-xs sm:text-sm mb-8">Take a look at our clean, modern templates built specifically to clear HR screening and ATS filters.</p>
+      
+      <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-950 p-3 group relative cursor-pointer" onclick="openLightbox('https://i.ibb.co/DHxk0WdB/showcase.jpg')">
+        <img src="https://i.ibb.co/DHxk0WdB/showcase.jpg" alt="Professional CV Showcase" class="w-full h-auto rounded-2xl object-cover group-hover:scale-[1.01] transition-transform duration-300" onerror="this.src='https://placehold.co/800x400/0f172a/fbbf24?text=Professional+CV+Center+Showcase'">
+        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl">
+          <span class="bg-amber-400 text-slate-950 font-bold text-xs px-4 py-2 rounded-xl shadow-lg flex items-center gap-2"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Order Form Section -->
-  <section id="order" class="py-16 bg-white">
+  <section id="order" class="py-20 bg-slate-100 border-t border-slate-200">
     <div class="max-w-2xl mx-auto px-4">
-      <div class="text-center mb-8">
-        <h2 class="text-3xl font-bold text-slate-900">Place Your Order</h2>
-        <p class="text-slate-500 text-xs mt-1">Fill out the details below and proceed via WhatsApp</p>
+      <div class="text-center mb-10">
+        <span class="inline-block bg-emerald-100 text-emerald-800 font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-widest mb-2">Direct Order</span>
+        <h2 class="text-3xl font-black text-slate-900">Place Your Order Instantly</h2>
+        <p class="text-slate-500 text-xs sm:text-sm mt-1">Fill out your details below and send directly to Hassan Jatoi via WhatsApp.</p>
       </div>
 
-      <form onsubmit="handleOrderSubmit(event)" class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 space-y-4">
-        <div>
-          <label class="block text-xs font-bold text-slate-700 mb-1">Your Full Name *</label>
-          <input type="text" id="clientName" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-amber-500" placeholder="e.g. Hassan Jatoi">
+      <form id="orderForm" onsubmit="handleOrderSubmit(event)" class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-2xl space-y-6">
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-2">Your Full Name *</label>
+            <input type="text" id="clientName" required class="w-full px-4 py-3.5 rounded-2xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:border-amber-500 bg-slate-50 font-medium" placeholder="e.g. Muhammad Ali">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-2">Your WhatsApp Number *</label>
+            <input type="tel" id="clientPhone" required class="w-full px-4 py-3.5 rounded-2xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:border-amber-500 bg-slate-50 font-medium" placeholder="e.g. 03001234567">
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-2">Select Service Package *</label>
+            <select id="serviceType" required class="w-full px-4 py-3.5 rounded-2xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:border-amber-500 bg-slate-50 font-medium">
+              <option value="Basic CV Design">Basic CV Design</option>
+              <option value="Pro ATS CV Package" selected>Pro ATS CV Package</option>
+              <option value="Global Job Package">Global Job Package</option>
+              <option value="Cover Letter Only">Cover Letter Only</option>
+              <option value="Experience Certificate Service">Experience Certificate Service</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 mb-2">Target Job Field / Country</label>
+            <input type="text" id="jobField" class="w-full px-4 py-3.5 rounded-2xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:border-amber-500 bg-slate-50 font-medium" placeholder="e.g. Accountant / Dubai, UAE">
+          </div>
         </div>
 
         <div>
-          <label class="block text-xs font-bold text-slate-700 mb-1">Select Service *</label>
-          <select id="serviceType" required class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-amber-500">
-            <option value="Basic CV Design">Basic CV Design</option>
-            <option value="Pro ATS CV Package">Pro ATS CV Package</option>
-            <option value="Global Job Package">Global Job Package</option>
-            <option value="Cover Letter Only">Cover Letter Only</option>
-          </select>
+          <label class="block text-xs font-bold text-slate-700 mb-2">Additional Instructions / Experience Summary</label>
+          <textarea id="additionalNotes" rows="3" class="w-full px-4 py-3.5 rounded-2xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:border-amber-500 bg-slate-50 font-medium" placeholder="Mention your degree, total experience years, or specific requirements..."></textarea>
         </div>
 
-        <div>
-          <label class="block text-xs font-bold text-slate-700 mb-1">Target Job Field / Country</label>
-          <input type="text" id="jobField" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-amber-500" placeholder="e.g. Accounting / UAE">
-        </div>
-
-        <div>
-          <label class="block text-xs font-bold text-slate-700 mb-1">Additional Instructions / Notes</label>
-          <textarea id="additionalNotes" rows="3" class="w-full px-4 py-3 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-amber-500" placeholder="Mention any specific requirements..."></textarea>
-        </div>
-
-        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl text-sm flex items-center justify-center gap-2 transition-all">
-          <i class="fa-brands fa-whatsapp text-lg"></i> Send Order to WhatsApp
+        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-black py-4 rounded-2xl text-sm flex items-center justify-center gap-2 transition-all shadow-xl hover:scale-[1.01]">
+          <i class="fa-brands fa-whatsapp text-xl"></i> Send Order to Hassan Jatoi (WhatsApp)
         </button>
       </form>
     </div>
   </section>
 
   <!-- FAQ Section -->
-  <section class="py-16 bg-slate-50 border-t border-slate-200">
+  <section class="py-20 bg-white border-t border-slate-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-10">
-        <span class="inline-block bg-blue-50 text-blue-700 font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">Questions</span>
-        <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Frequently Asked Questions</h2>
+      <div class="text-center mb-12">
+        <span class="inline-block bg-blue-50 text-blue-700 font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-widest">Help & Info</span>
+        <h2 class="text-3xl font-black text-slate-900 mt-2">Frequently Asked Questions</h2>
       </div>
 
       <div class="space-y-4">
-        <div class="bg-white p-5 rounded-2xl border border-slate-200">
-          <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-            <i class="fa-solid fa-circle-question text-blue-600"></i> سی وی کتنی دیر میں تیار ہو کر ملے گی؟
+        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200">
+          <h4 class="font-black text-slate-900 text-sm sm:text-base flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs flex-shrink-0">Q1</span>
+            سی وی کتنی دیر میں تیار ہو کر ملے گی؟
           </h4>
-          <p class="text-slate-600 text-xs mt-2 pl-6">آپ کا آرڈر اور تفصیلات موصول ہونے کے بعد 24 گھنٹے کے اندر اندر سی وی تیار کر کے واٹس ایپ/ای میل پر بھیج دی جاتی ہے۔</p>
+          <p class="text-slate-600 text-xs sm:text-sm mt-2 pl-11 leading-relaxed">آپ کا آرڈر اور تفصیلات موصول ہونے کے بعد چند گھنٹوں کے اندر اندر سی وی تیار کر کے ہائی ریزولوشن PDF فارمیٹ میں آپ کے واٹس ایپ پر بھیج دی جاتی ہے۔</p>
         </div>
 
-        <div class="bg-white p-5 rounded-2xl border border-slate-200">
-          <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-            <i class="fa-solid fa-circle-question text-blue-600"></i> پیمنٹ کیسے کرنی ہوگی؟
+        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200">
+          <h4 class="font-black text-slate-900 text-sm sm:text-base flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs flex-shrink-0">Q2</span>
+            پیمنٹ کیسے کرنی ہوگی؟
           </h4>
-          <p class="text-slate-600 text-xs mt-2 pl-6">آپ **JazzCash** کے ذریعے **03083500829** پر آسانی سے پیمنٹ ٹرانسفر کر سکتے ہیں۔ اس کے علاوہ EasyPaisa اور Bank Transfer کا آپشن بھی موجود ہے۔</p>
+          <p class="text-slate-600 text-xs sm:text-sm mt-2 pl-11 leading-relaxed">آپ **JazzCash** (03083500829) یا **Bank Transfer** (IBAN: PK88JCMA1109923083500829) کے ذریعے اکاؤنٹ ٹائٹل **HASSAN ALI** پر آسانی سے پیمنٹ ٹرانسفر کر سکتے ہیں۔ پیمنٹ کے بعد اسکرین شاٹ واٹس ایپ پر ضرور بھیجیں۔</p>
         </div>
 
-        <div class="bg-white p-5 rounded-2xl border border-slate-200">
-          <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
-            <i class="fa-solid fa-circle-question text-blue-600"></i> اگر مجھے سی وی میں کچھ چینجز کروانی ہوں؟
+        <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200">
+          <h4 class="font-black text-slate-900 text-sm sm:text-base flex items-center gap-3">
+            <span class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs flex-shrink-0">Q3</span>
+            اگر مجھے سی وی میں کچھ تبدیلیاں (Revisions) کروانی ہوں؟
           </h4>
-          <p class="text-slate-600 text-xs mt-2 pl-6">ہماری طرف سے فری ریویژنز فراہم کی جاتی ہیں۔ اگر آپ کو کسی قسم کی تصحیح یا تبدیلی کروانی ہو تو فوراً کر کے دی جائے گی۔</p>
+          <p class="text-slate-600 text-xs sm:text-sm mt-2 pl-11 leading-relaxed">ہم تمام پیکیجز میں ریویژنز فراہم کرتے ہیں۔ اگر آپ کو کسی قسم کی تصحیح، نام، یا تجربے میں تبدیلی درکار ہو تو آپ ہمیں بتا سکتے ہیں۔</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-slate-950 text-slate-400 py-8 text-center text-xs border-t border-white/10 space-y-2">
-    <p>© 2026 Professional CV & Document Center. All rights reserved.</p>
+  <footer class="bg-slate-950 text-slate-400 py-12 text-center text-xs border-t border-white/10 space-y-6 mb-20 md:mb-0">
+    <div class="flex justify-center items-center gap-4 text-lg">
+      <a href="https://www.linkedin.com/in/hassanjatoi786" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center text-slate-300 hover:text-amber-400 hover:border-amber-400 transition-all"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/share/1JWWY4JW22/" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center text-slate-300 hover:text-amber-400 hover:border-amber-400 transition-all"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://wa.me/923083500829" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center text-slate-300 hover:text-emerald-400 hover:border-emerald-400 transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <p class="font-medium">© 2026 Professional CV & Document Center. All rights reserved. Managed by Hassan Jatoi.</p>
     <p>
-      <a href="https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA" target="_blank" class="text-amber-400 hover:underline">
-        <i class="fa-solid fa-map-pin"></i> Mehar, Sindh, Pakistan (Find us on Google Maps)
+      <a href="https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA" target="_blank" class="text-amber-400 hover:underline inline-flex items-center gap-1.5 font-bold">
+        <i class="fa-solid fa-map-pin"></i> Mehar, Sindh, Pakistan (Official Google Maps Location)
       </a>
     </p>
   </footer>
 
-  <!-- Script -->
+  <!-- Floating Chatbot Widget -->
+  <div id="aiChatWidget" class="fixed bottom-6 right-6 z-50">
+    <!-- Chat Window -->
+    <div id="chatWindow" class="hidden absolute bottom-16 right-0 w-80 sm:w-96 bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col transition-all duration-300 transform scale-95 opacity-0 origin-bottom-right" style="max-height: 540px; height: 520px;">
+      <!-- Chat Header -->
+      <div class="bg-slate-950 text-white px-4 py-3.5 flex items-center justify-between border-b border-white/10">
+        <div class="flex items-center gap-3">
+          <div class="relative">
+            <img src="https://i.ibb.co/DfDdvnp2/profile.jpg" alt="Hassan Jatoi AI" class="w-9 h-9 rounded-full object-cover border border-amber-400">
+            <span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 rounded-full border-2 border-slate-950"></span>
+          </div>
+          <div>
+            <h3 class="text-sm font-black text-amber-400">Hassan Jatoi AI Assistant</h3>
+            <p class="text-[10px] text-slate-400">Online • CV & Document Expert</p>
+          </div>
+        </div>
+        <button onclick="toggleChat()" class="text-slate-400 hover:text-white p-1.5 rounded-xl hover:bg-white/10 transition-colors">
+          <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+      </div>
+
+      <!-- Chat Messages Body -->
+      <div id="chatMessages" class="flex-1 p-4 overflow-y-auto space-y-3 bg-slate-50 text-xs">
+        <!-- Welcome Message -->
+        <div class="flex items-start gap-2.5">
+          <div class="w-7 h-7 rounded-full bg-slate-950 text-amber-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 shadow-sm">HJ</div>
+          <div class="bg-white p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-slate-200 text-slate-700 max-w-[85%] space-y-2.5">
+            <p>👋 Assalam-o-Alaikum! Welcome to <strong>Professional CV & Document Center</strong>. I'm Hassan Jatoi's AI Assistant. How can I help you today?</p>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <button onclick="sendQuickPrompt('What are your package prices?')" class="bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 px-2.5 py-1 rounded-xl text-[10px] font-bold transition-colors">💰 Prices?</button>
+              <button onclick="sendQuickPrompt('What is JazzCash account details?')" class="bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 px-2.5 py-1 rounded-xl text-[10px] font-bold transition-colors">💳 JazzCash Details</button>
+              <button onclick="sendQuickPrompt('What is the delivery time?')" class="bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 px-2.5 py-1 rounded-xl text-[10px] font-bold transition-colors">⏱️ Delivery Time</button>
+              <button onclick="sendQuickPrompt('How to order a CV?')" class="bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-200 px-2.5 py-1 rounded-xl text-[10px] font-bold transition-colors">📝 How to Order?</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chat Input Footer -->
+      <div class="p-3.5 bg-white border-t border-slate-200 flex items-center gap-2">
+        <input type="text" id="chatInput" onkeydown="handleChatKeyDown(event)" placeholder="Ask about CVs, JazzCash, WhatsApp..." class="flex-1 px-4 py-3 rounded-2xl border border-slate-300 text-xs focus:outline-none focus:border-amber-500 bg-slate-50 font-medium">
+        <button onclick="sendUserMessage()" class="bg-amber-600 hover:bg-amber-500 text-white w-10 h-10 rounded-2xl flex items-center justify-center shadow-lg transition-all flex-shrink-0">
+          <i class="fa-solid fa-paper-plane text-xs"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Toggle Bubble Button -->
+    <button onclick="toggleChat()" class="chat-bubble-pulse bg-gradient-to-tr from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center font-bold text-xl relative border-2 border-white transition-transform hover:scale-110">
+      <i class="fa-solid fa-comments"></i>
+      <span class="absolute -top-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-white animate-ping"></span>
+      <span class="absolute -top-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-white"></span>
+    </button>
+  </div>
+
+  <!-- Image Lightbox Modal -->
+  <div id="lightboxModal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden flex items-center justify-center p-4" onclick="closeLightbox()">
+    <div class="relative max-w-4xl w-full max-h-[90vh] overflow-hidden flex items-center justify-center" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" class="absolute top-4 right-4 z-10 bg-slate-900/80 hover:bg-slate-800 text-white w-10 h-10 rounded-full flex items-center justify-center text-lg border border-white/20 shadow-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <img id="lightboxImage" src="" alt="Zoomed Showcase" class="max-w-full max-h-[85vh] object-contain rounded-2xl border-2 border-amber-400 shadow-2xl">
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="fixed top-24 right-6 z-50 transform translate-x-full transition-transform duration-300 bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-2xl border border-amber-400/40 flex items-center gap-3 text-xs font-bold">
+    <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+    <span id="toastText">Copied to clipboard successfully!</span>
+  </div>
+
+  <!-- Script Logic -->
   <script>
+    // Live Order Ticker Simulation Array
+    const liveOrders = [
+      "🔥 Muhammad Ali (Karachi) just ordered Pro ATS CV Package (1 min ago)",
+      "⭐ Ayesha Khan (Dubai, UAE) ordered Global Job Package (3 mins ago)",
+      "🚀 Bilal Ahmed (Lahore) ordered Basic CV Design (Just now)",
+      "💼 Zainab Malik (Islamabad) ordered Pro ATS CV Package (4 mins ago)",
+      "✨ Tariq Mehmood (Riyadh, KSA) ordered Global Job Package (2 mins ago)",
+      "🎯 Farhan Siddiqui (Hyderabad) ordered Cover Letter & CV Suite (5 mins ago)",
+      "🌟 Sadia Parveen (Sukkur) ordered Pro ATS CV Package (Just now)"
+    ];
+
+    let currentOrderIndex = 0;
+    function updateLiveTicker() {
+      const tickerElem = document.getElementById('liveTickerText');
+      if (tickerElem) {
+        tickerElem.classList.remove('ticker-animate');
+        // trigger reflow
+        void tickerElem.offsetWidth;
+        tickerElem.textContent = liveOrders[currentOrderIndex];
+        tickerElem.classList.add('ticker-animate');
+        currentOrderIndex = (currentOrderIndex + 1) % liveOrders.length;
+      }
+    }
+
+    // Rotate live order every 4 seconds
+    setInterval(updateLiveTicker, 4000);
+
+    function selectPackageAndScroll(packageName) {
+      const selectElem = document.getElementById('serviceType');
+      if (selectElem) {
+        for (let i = 0; i < selectElem.options.length; i++) {
+          if (selectElem.options[i].value === packageName) {
+            selectElem.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+    }
+
     function handleOrderSubmit(e) {
       e.preventDefault();
       const name = document.getElementById('clientName').value.trim();
+      const phone = document.getElementById('clientPhone').value.trim();
       const service = document.getElementById('serviceType').value;
       const field = document.getElementById('jobField').value.trim();
       const notes = document.getElementById('additionalNotes').value.trim();
       
-      let message = `*NEW CV DESIGN ORDER*%0A%0A`;
+      let message = `*NEW PROFESSIONAL CV ORDER*%0A%0A`;
       message += `👤 *Name:* ${encodeURIComponent(name)}%0A`;
-      message += `📄 *Service:* ${encodeURIComponent(service)}%0A`;
-      if (field) message += `🌍 *Target Field/Country:* ${encodeURIComponent(field)}%0A`;
-      if (notes) message += `📝 *Notes:* ${encodeURIComponent(notes)}%0A`;
-      message += `%0A💳 *Payment Method:* JazzCash (03083500829)%0A`;
-      message += `Hello Hassan! Please share the total price details so I can proceed with payment.`;
+      message += `📱 *Phone:* ${encodeURIComponent(phone)}%0A`;
+      message += `📄 *Service Package:* ${encodeURIComponent(service)}%0A`;
+      if (field) message += `🌍 *Target Job/Country:* ${encodeURIComponent(field)}%0A`;
+      if (notes) message += `📝 *Notes/Experience:* ${encodeURIComponent(notes)}%0A`;
+      message += `%0A💳 *Payment Account:* HASSAN ALI (JazzCash / Bank: 03083500829)%0A`;
+      message += `Hello Hassan! Please confirm my order and share the exact payment details so I can proceed.`;
       
-      window.open(`https://wa.me/923083500829?text=${message}`, '_blank');
+      showToast('Redirecting to WhatsApp with your order...');
+      setTimeout(() => {
+        window.open(`https://wa.me/923083500829?text=${message}`, '_blank');
+      }, 600);
+    }
+
+    function copyToClipboard(text, elem) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          showToast(`Copied: ${text}`);
+        }).catch(() => {
+          fallbackCopyText(text);
+        });
+      } else {
+        fallbackCopyText(text);
+      }
+    }
+
+    function fallbackCopyText(text) {
+      const textArea = document.createElement("textarea");
+      textArea.value = text;
+      textArea.style.position = "fixed";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      try {
+        document.execCommand('copy');
+        showToast(`Copied: ${text}`);
+      } catch (err) {
+        showToast('Failed to copy');
+      }
+      document.body.removeChild(textArea);
+    }
+
+    function showToast(text) {
+      const toast = document.getElementById('toastNotification');
+      const toastText = document.getElementById('toastText');
+      toastText.textContent = text;
+      toast.classList.remove('translate-x-full');
+      setTimeout(() => {
+        toast.classList.add('translate-x-full');
+      }, 3000);
+    }
+
+    function openLightbox(imgSrc) {
+      const modal = document.getElementById('lightboxModal');
+      const img = document.getElementById('lightboxImage');
+      img.src = imgSrc;
+      modal.classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightboxModal');
+      modal.classList.add('hidden');
+    }
+
+    /* Chatbot Logic & Interactive Assistant */
+    let isChatOpen = false;
+
+    function toggleChat() {
+      const win = document.getElementById('chatWindow');
+      isChatOpen = !isChatOpen;
+      if (isChatOpen) {
+        win.classList.remove('hidden');
+        setTimeout(() => {
+          win.classList.remove('scale-95', 'opacity-0');
+          win.classList.add('scale-100', 'opacity-100');
+        }, 10);
+        document.getElementById('chatInput').focus();
+      } else {
+        win.classList.remove('scale-100', 'opacity-100');
+        win.classList.add('scale-95', 'opacity-0');
+        setTimeout(() => {
+          win.classList.add('hidden');
+        }, 300);
+      }
+    }
+
+    function sendQuickPrompt(text) {
+      document.getElementById('chatInput').value = text;
+      sendUserMessage();
+    }
+
+    function handleChatKeyDown(e) {
+      if (e.key === 'Enter') {
+        sendUserMessage();
+      }
+    }
+
+    function sendUserMessage() {
+      const input = document.getElementById('chatInput');
+      const text = input.value.trim();
+      if (!text) return;
+
+      appendMessage(text, 'user');
+      input.value = '';
+
+      showTypingIndicator();
+
+      setTimeout(() => {
+        removeTypingIndicator();
+        const botReply = generateBotResponse(text);
+        appendMessage(botReply, 'bot');
+      }, 700);
+    }
+
+    function appendMessage(text, sender) {
+      const container = document.getElementById('chatMessages');
+      const div = document.createElement('div');
+      
+      if (sender === 'user') {
+        div.className = 'flex items-end justify-end gap-2';
+        div.innerHTML = `
+          <div class="bg-amber-600 text-white p-3 rounded-2xl rounded-tr-none shadow-sm max-w-[80%] text-xs font-medium">
+            <p>${escapeHtml(text)}</p>
+          </div>
+          <div class="w-7 h-7 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold text-[10px] flex-shrink-0">You</div>
+        `;
+      } else {
+        div.className = 'flex items-start gap-2.5';
+        div.innerHTML = `
+          <div class="w-7 h-7 rounded-full bg-slate-950 text-amber-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0 shadow-sm">HJ</div>
+          <div class="bg-white p-3.5 rounded-2xl rounded-tl-none shadow-sm border border-slate-200 text-slate-700 max-w-[85%] text-xs space-y-2">
+            <div>${text}</div>
+          </div>
+        `;
+      }
+      
+      container.appendChild(div);
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function showTypingIndicator() {
+      const container = document.getElementById('chatMessages');
+      const div = document.createElement('div');
+      div.id = 'typingIndicator';
+      div.className = 'flex items-start gap-2.5';
+      div.innerHTML = `
+        <div class="w-7 h-7 rounded-full bg-slate-950 text-amber-400 flex items-center justify-center font-bold text-[10px] flex-shrink-0">HJ</div>
+        <div class="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-slate-200 text-slate-500 text-xs flex items-center gap-1">
+          <span class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce"></span>
+          <span class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style="animation-delay: 0.2s"></span>
+          <span class="w-1.5 h-1.5 bg-slate-400 rounded-full animate-bounce" style="animation-delay: 0.4s"></span>
+        </div>
+      `;
+      container.appendChild(div);
+      container.scrollTop = container.scrollHeight;
+    }
+
+    function removeTypingIndicator() {
+      const ind = document.getElementById('typingIndicator');
+      if (ind) ind.remove();
+    }
+
+    function escapeHtml(text) {
+      const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
+      return text.replace(/[&<>"']/g, m => map[m]);
+    }
+
+    function generateBotResponse(query) {
+      const q = query.toLowerCase();
+
+      if (q.includes('price') || q.includes('cost') || q.includes('fee') || q.includes('rate') || q.includes('charges')) {
+        return `Our packages are very affordable & high quality!<br>
+        • <strong>Basic CV:</strong> Entry-level standard rate.<br>
+        • <strong>Pro ATS Package:</strong> Best value with cover letter.<br>
+        • <strong>Global Job Package:</strong> Complete suite for Gulf & Europe.<br>
+        <a href="https://wa.me/923083500829?text=Hi%20Hassan,%20I%20want%20to%20know%20the%20exact%20pricing." target="_blank" class="inline-block mt-2 text-emerald-600 font-bold underline">💬 Click to chat on WhatsApp for exact price</a>`;
+      }
+      
+      if (q.includes('jazzcash') || q.includes('payment') || q.includes('account') || q.includes('bank') || q.includes('iban')) {
+        return `💳 <strong>Official Payment Details:</strong><br>
+        • <strong>Account Title:</strong> HASSAN ALI<br>
+        • <strong>JazzCash:</strong> <span class="select-all font-bold text-slate-900">03083500829</span><br>
+        • <strong>IBAN:</strong> <span class="select-all font-mono font-bold text-slate-900">PK88JCMA1109923083500829</span><br><br>
+        <em>After payment, please send your screenshot on WhatsApp!</em><br>
+        <a href="https://wa.me/923083500829?text=Hi%20Hassan,%20I%20have%20made%20the%20payment.%20Here%20is%20my%20screenshot." target="_blank" class="inline-block mt-2 text-emerald-600 font-bold underline">Send Screenshot on WhatsApp 📱</a>`;
+      }
+
+      if (q.includes('delivery') || q.includes('time') || q.includes('how long') || q.includes('hour')) {
+        return `⏱️ <strong>Fast Delivery!</strong><br>Your professional CV, Resume, and Cover Letter are prepared and delivered to you in high-resolution PDF format via WhatsApp.`;
+      }
+
+      if (q.includes('order') || q.includes('how to')) {
+        return `📝 <strong>How to Order:</strong><br>Simply fill out our order form on the website with your name, phone, and target job field, and click <strong>"Send Order to Hassan Jatoi (WhatsApp)"</strong>. You can also chat directly on WhatsApp!`;
+      }
+
+      if (q.includes('whatsapp') || q.includes('contact') || q.includes('phone') || q.includes('call') || q.includes('number')) {
+        return `📱 You can contact Hassan Jatoi directly on WhatsApp:<br>
+        <strong>Number:</strong> 03083500829<br>
+        <a href="https://wa.me/923083500829" target="_blank" class="inline-block mt-2 bg-emerald-600 text-white px-3.5 py-2 rounded-xl font-bold shadow-sm">Open WhatsApp Now 🚀</a>`;
+      }
+
+      return `Thank you for your inquiry! For custom requirements, exact pricing, or to place your order right away, please chat with Hassan Jatoi on WhatsApp.<br><br>
+      <a href="https://wa.me/923083500829?text=Hi%20Hassan,%20I%20have%20a%20question%20about%20your%20services." target="_blank" class="inline-block bg-emerald-600 text-white px-3.5 py-2.5 rounded-xl font-bold text-center w-full mt-1 shadow-md"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp (03083500829)</a>`;
     }
   </script>
 </body>
