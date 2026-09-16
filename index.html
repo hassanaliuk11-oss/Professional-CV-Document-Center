@@ -4,19 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <!-- Enhanced SEO Meta Tags for Fast Google Indexing & Ranking -->
+  <title>Professional CV & Document Center | ATS Resume Writing by Hassan Jatoi</title>
+  <meta name="description" content="Official hub for professional ATS CV design, international resume writing, cover letters, and document services for UAE, Saudi Arabia, Europe, and Pakistan by Hassan Jatoi (Mehar, Sindh).">
+  <meta name="keywords" content="Professional CV Center, Hassan Jatoi, ATS Resume Writing, CV Maker Pakistan, Gulf Job CV, Cover Letter Service, JazzCash Payment CV, Mehar Sindh">
+  <meta name="author" content="Hassan Jatoi">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph Meta Tags for Social Media Sharing -->
+  <meta property="og:title" content="Professional CV & Document Center | Hassan Jatoi">
+  <meta property="og:description" content="Get custom ATS-friendly international standard resumes designed for the Gulf, Europe, and Pakistan. Order now via WhatsApp!">
+  <meta property="og:image" content="https://i.ibb.co/DfDdvnp2/profile.jpg">
+  <meta property="og:url" content="https://professional-cv-document-center.vercel.app/">
+  <meta property="og:type" content="website">
+
   <!-- Google Search Console Verification Meta Tag -->
   <meta name="google-site-verification" content="D9U4FW1xUX0jGbss1thwdhjRNQcqammsqvBxrr9sL7w" />
   
-  <title>Professional CV & Document Center | Hassan Jatoi</title>
-  
-  <!-- Schema.org Structured Data for Local Business -->
+  <!-- Schema.org Structured Data for Local Business & Rich Results -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Professional CV & Document Center",
+    "image": "https://i.ibb.co/DfDdvnp2/profile.jpg",
     "url": "https://professional-cv-document-center.vercel.app/",
     "telephone": "+923083500829",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mehar",
+      "addressRegion": "Sindh",
+      "addressCountry": "PK"
+    },
+    "priceRange": "Affordable",
     "hasMap": "https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA",
     "sameAs": [
       "https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA",
@@ -47,43 +67,50 @@
       70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(245, 158, 11, 0); }
       100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
     }
-    .glass-effect {
-      background: rgba(15, 23, 42, 0.85);
-      backdrop-filter: blur(12px);
+    
+    /* Slow, perfectly readable marquee animation (increased duration to 55s so names can be read clearly) */
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
     }
-    /* Ticker animation */
-    @keyframes tickerFade {
-      0% { opacity: 0; transform: translateY(5px); }
-      100% { opacity: 1; transform: translateY(0); }
+    .animate-marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 55s linear infinite;
     }
-    .ticker-animate {
-      animation: tickerFade 0.4s ease-out forwards;
+    .animate-marquee:hover {
+      animation-play-state: paused;
     }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-amber-400 selection:text-slate-950">
 
-  <!-- Live Rush / Recent Orders Ticker Bar -->
-  <div class="bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 text-slate-950 font-bold text-xs py-2 px-4 shadow-md sticky top-0 z-50 overflow-hidden">
-    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4 flex-wrap">
-      <div class="flex items-center gap-2">
-        <span class="bg-slate-950 text-amber-400 text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wider animate-pulse flex items-center gap-1">
-          <i class="fa-solid fa-fire text-amber-400"></i> LIVE RUSH
-        </span>
-        <span id="liveTickerText" class="ticker-animate font-extrabold text-slate-950 truncate">
-          🔥 Muhammad Ali (Karachi) just ordered Pro ATS CV Package (2 mins ago)
-        </span>
-      </div>
-      <div class="hidden sm:flex items-center gap-3 text-[11px] text-slate-950 font-black">
-        <span>⚡ 42 Orders in progress today</span>
+  <div class="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 text-slate-950 font-bold text-xs py-2.5 px-4 shadow-md sticky top-0 z-50 overflow-hidden flex items-center justify-between gap-4">
+    <!-- Left badge: Live Online Viewers counter fluctuating automatically -->
+    <div class="flex items-center gap-2 flex-shrink-0 z-10 bg-slate-950 text-amber-400 px-3 py-1 rounded-full shadow-md text-[11px] font-black">
+      <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping inline-block"></span>
+      <span>🟢 <span id="onlineViewersCount">42</span> Active Visitors Online</span>
+    </div>
+
+    <!-- Right side: Continuous slow scrolling ticker for ultimate readability -->
+    <div class="overflow-hidden flex-1 relative whitespace-nowrap">
+      <div class="animate-marquee inline-flex items-center gap-12 text-slate-950 font-extrabold text-xs tracking-wide">
+        <span>🔥 Muhammad Ali (Karachi) just ordered Pro ATS CV Package (2 mins ago)</span>
         <span>•</span>
-        <span>🕒 Avg Delivery: 4 Hours</span>
+        <span>⭐ Ayesha Khan (Dubai, UAE) ordered Global Job Package (3 mins ago)</span>
+        <span>•</span>
+        <span>🚀 Bilal Ahmed (Lahore) ordered Basic CV Design (5 mins ago)</span>
+        <span>•</span>
+        <span>💼 Zainab Malik (Islamabad) ordered Pro ATS CV Package (6 mins ago)</span>
+        <span>•</span>
+        <span>✨ Tariq Mehmood (Riyadh, KSA) ordered Global Job Package (Just now)</span>
+        <span>•</span>
+        <span>🎯 Kamran Qureshi (Faisalabad) ordered Cover Letter & CV Suite (10 mins ago)</span>
       </div>
     </div>
   </div>
 
-  <!-- Top Bar & Header -->
-  <header class="bg-slate-950 text-white py-3.5 border-b border-white/10 sticky top-[36px] sm:top-[38px] z-40 shadow-xl">
+  <header class="bg-slate-950 text-white py-3.5 border-b border-white/10 sticky top-[38px] z-40 shadow-xl">
     <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
       <a href="#" class="flex items-center gap-2.5 group">
         <img src="https://i.ibb.co/DfDdvnp2/profile.jpg" alt="Hassan Jatoi Profile" class="w-10 h-10 rounded-full object-cover border-2 border-amber-400 shadow-md group-hover:scale-105 transition-transform" onerror="this.src='https://placehold.co/100x100/1e293b/fbbf24?text=HJ'">
@@ -103,7 +130,6 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="relative bg-slate-950 text-white py-20 lg:py-28 border-b border-white/15 overflow-hidden">
     <div class="absolute inset-0 z-0 opacity-15 mix-blend-luminosity">
       <img src="https://i.ibb.co/qF0yNz6K/cover.jpg" alt="Cover Letter Background" class="w-full h-full object-cover" onerror="this.style.display='none'">
@@ -174,7 +200,6 @@
     </div>
   </section>
 
-  <!-- Google 5-Star Review Callout Banner -->
   <section class="py-12 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 border-y border-amber-600 shadow-xl relative overflow-hidden">
     <div class="max-w-4xl mx-auto px-4 text-center relative z-10">
       <div class="inline-flex items-center gap-2 bg-slate-950 text-amber-400 text-xs px-4 py-1.5 rounded-full font-black uppercase tracking-widest mb-3 shadow-md">
@@ -194,16 +219,6 @@
     </div>
   </section>
 
-  <!-- Location Banner -->
-  <div class="bg-slate-900 text-white py-3.5 px-4 font-bold text-xs text-center border-b border-white/10 shadow-md sticky top-[103px] sm:top-[105px] z-30">
-    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
-      <i class="fa-solid fa-store text-amber-400 text-sm animate-pulse"></i>
-      <span>Google Profile: <strong class="text-amber-400">Professional CV & Document Center</strong> (Mehar, Sindh)</span>
-      <a href="https://maps.app.goo.gl/DypDXZ3ws2PcXe9CA" target="_blank" class="bg-amber-400 text-slate-950 px-3 py-1 rounded-lg ml-2 hover:bg-amber-300 transition-colors shadow-sm font-black">Open Google Maps 🗺️</a>
-    </div>
-  </div>
-
-  <!-- Pricing & Packages Section -->
   <section id="pricing" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-16">
@@ -292,7 +307,6 @@
     </div>
   </section>
 
-  <!-- Payment Methods Section -->
   <section class="py-16 bg-slate-950 text-white border-y border-white/10 relative overflow-hidden">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
       <span class="inline-block bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs px-4 py-1.5 rounded-full uppercase font-bold tracking-widest mb-3">Secure Transactions</span>
@@ -345,23 +359,21 @@
     </div>
   </section>
 
-  <!-- Showcase Portfolio Section -->
   <section class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <span class="inline-block bg-indigo-50 text-indigo-700 font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-widest mb-3">Portfolio Standard</span>
-      <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-4">Professional Work Showcase</h3>
-      <p class="text-slate-500 text-xs sm:text-sm mb-8">Take a look at our clean, modern templates built specifically to clear HR screening and ATS filters.</p>
+    <div class="max-w-xl mx-auto px-4 text-center">
+      <span class="inline-block bg-amber-100 text-amber-800 font-extrabold text-xs px-4 py-1.5 rounded-full uppercase tracking-widest mb-3">Verified Standard</span>
+      <h3 class="text-2xl sm:text-3xl font-black text-slate-900 mb-2">Our Professional CV Template</h3>
+      <p class="text-slate-500 text-xs sm:text-sm mb-8">Clean, professional layout designed to get you hired instantly.</p>
       
-      <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-950 p-3 group relative cursor-pointer" onclick="openLightbox('https://i.ibb.co/DHxk0WdB/showcase.jpg')">
-        <img src="https://i.ibb.co/DHxk0WdB/showcase.jpg" alt="Professional CV Showcase" class="w-full h-auto rounded-2xl object-cover group-hover:scale-[1.01] transition-transform duration-300" onerror="this.src='https://placehold.co/800x400/0f172a/fbbf24?text=Professional+CV+Center+Showcase'">
+      <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-amber-400 bg-slate-950 p-2 group relative cursor-pointer" onclick="openLightbox('https://res.cloudinary.com/bppt4zlw/image/upload/f_auto,q_auto/1000075027')">
+        <img src="https://res.cloudinary.com/bppt4zlw/image/upload/f_auto,q_auto/1000075027" alt="Professional CV Template Preview" width="800" height="1200" class="w-full h-auto rounded-2xl object-cover group-hover:scale-[1.01] transition-transform duration-300 shadow-inner" onerror="this.src='https://placehold.co/800x1200/0f172a/fbbf24?text=CV+Template+Preview'">
         <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl">
-          <span class="bg-amber-400 text-slate-950 font-bold text-xs px-4 py-2 rounded-xl shadow-lg flex items-center gap-2"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom</span>
+          <span class="bg-amber-400 text-slate-950 font-bold text-xs px-4 py-2 rounded-xl shadow-lg flex items-center gap-2"><i class="fa-solid fa-magnifying-glass-plus"></i> Click to Zoom HD</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Order Form Section -->
   <section id="order" class="py-20 bg-slate-100 border-t border-slate-200">
     <div class="max-w-2xl mx-auto px-4">
       <div class="text-center mb-10">
@@ -411,7 +423,6 @@
     </div>
   </section>
 
-  <!-- FAQ Section -->
   <section class="py-20 bg-white border-t border-slate-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
@@ -441,18 +452,17 @@
             <span class="w-8 h-8 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center text-xs flex-shrink-0">Q3</span>
             اگر مجھے سی وی میں کچھ تبدیلیاں (Revisions) کروانی ہوں؟
           </h4>
-          <p class="text-slate-600 text-xs sm:text-sm mt-2 pl-11 leading-relaxed">ہم تمام پیکیجز میں ریویژنز فراہم کرتے ہیں۔ اگر آپ کو کسی قسم کی تصحیح، نام، یا تجربے میں تبدیلی درکار ہو تو آپ ہمیں بتا سکتے ہیں۔</p>
+          <p class="text-slate-600 text-xs sm:text-sm mt-2 pl-11 leading-relaxed">ہم تمام پیکیجز میں ریویژنز فراہم کرتے ہیں۔ اگر آپ کو کسی قسم کی تصحیح، نام، یا تجربے میں تبدیلی درکار ہو تو آپ ہمیں بتا سکتے ہیںـ</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-slate-950 text-slate-400 py-12 text-center text-xs border-t border-white/10 space-y-6 mb-20 md:mb-0">
     <div class="flex justify-center items-center gap-4 text-lg">
       <a href="https://www.linkedin.com/in/hassanjatoi786" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center text-slate-300 hover:text-amber-400 hover:border-amber-400 transition-all"><i class="fa-brands fa-linkedin"></i></a>
       <a href="https://www.facebook.com/share/1JWWY4JW22/" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center text-slate-300 hover:text-amber-400 hover:border-amber-400 transition-all"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://wa.me/923083500829" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center text-slate-300 hover:text-emerald-400 hover:border-emerald-400 transition-all"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://wa.me/923083500829" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center text-emerald-400 hover:border-emerald-400 transition-all"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
     <p class="font-medium">© 2026 Professional CV & Document Center. All rights reserved. Managed by Hassan Jatoi.</p>
     <p>
@@ -462,7 +472,6 @@
     </p>
   </footer>
 
-  <!-- Floating Chatbot Widget -->
   <div id="aiChatWidget" class="fixed bottom-6 right-6 z-50">
     <!-- Chat Window -->
     <div id="chatWindow" class="hidden absolute bottom-16 right-0 w-80 sm:w-96 bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden flex flex-col transition-all duration-300 transform scale-95 opacity-0 origin-bottom-right" style="max-height: 540px; height: 520px;">
@@ -533,34 +542,30 @@
     <span id="toastText">Copied to clipboard successfully!</span>
   </div>
 
-  <!-- Script Logic -->
   <script>
-    // Live Order Ticker Simulation Array
-    const liveOrders = [
-      "🔥 Muhammad Ali (Karachi) just ordered Pro ATS CV Package (1 min ago)",
-      "⭐ Ayesha Khan (Dubai, UAE) ordered Global Job Package (3 mins ago)",
-      "🚀 Bilal Ahmed (Lahore) ordered Basic CV Design (Just now)",
-      "💼 Zainab Malik (Islamabad) ordered Pro ATS CV Package (4 mins ago)",
-      "✨ Tariq Mehmood (Riyadh, KSA) ordered Global Job Package (2 mins ago)",
-      "🎯 Farhan Siddiqui (Hyderabad) ordered Cover Letter & CV Suite (5 mins ago)",
-      "🌟 Sadia Parveen (Sukkur) ordered Pro ATS CV Package (Just now)"
-    ];
-
-    let currentOrderIndex = 0;
-    function updateLiveTicker() {
-      const tickerElem = document.getElementById('liveTickerText');
-      if (tickerElem) {
-        tickerElem.classList.remove('ticker-animate');
-        // trigger reflow
-        void tickerElem.offsetWidth;
-        tickerElem.textContent = liveOrders[currentOrderIndex];
-        tickerElem.classList.add('ticker-animate');
-        currentOrderIndex = (currentOrderIndex + 1) % liveOrders.length;
+    // Automatically fluctuate live online viewers count randomly up and down
+    function initOnlineViewers() {
+      let currentViewers = Math.floor(Math.random() * 25) + 36; // starts between 36 and 61
+      const countElem = document.getElementById('onlineViewersCount');
+      if (countElem) {
+        countElem.textContent = currentViewers;
       }
+
+      setInterval(() => {
+        const fluctuation = Math.floor(Math.random() * 7) - 3; // -3 to +3
+        currentViewers += fluctuation;
+        if (currentViewers < 28) currentViewers = 28;
+        if (currentViewers > 88) currentViewers = 88;
+        
+        if (countElem) {
+          countElem.textContent = currentViewers;
+        }
+      }, 5000);
     }
 
-    // Rotate live order every 4 seconds
-    setInterval(updateLiveTicker, 4000);
+    window.addEventListener('DOMContentLoaded', () => {
+      initOnlineViewers();
+    });
 
     function selectPackageAndScroll(packageName) {
       const selectElem = document.getElementById('serviceType');
